@@ -38,6 +38,9 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdicionarConteudo));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -48,6 +51,10 @@
             this.txtEscritor = new Guna.UI2.WinForms.Guna2TextBox();
             this.date = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.btnAdicionar = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.picturebox = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btnImagem = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.picturebox)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -201,13 +208,53 @@
             this.btnAdicionar.Size = new System.Drawing.Size(109, 48);
             this.btnAdicionar.TabIndex = 19;
             this.btnAdicionar.Text = "Adicionar";
+            this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
+            // 
+            // picturebox
+            // 
+            this.picturebox.BackColor = System.Drawing.Color.Transparent;
+            this.picturebox.CustomizableEdges = customizableEdges11;
+            this.picturebox.ImageRotate = 0F;
+            this.picturebox.Location = new System.Drawing.Point(874, 91);
+            this.picturebox.Name = "picturebox";
+            this.picturebox.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            this.picturebox.Size = new System.Drawing.Size(246, 224);
+            this.picturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picturebox.TabIndex = 20;
+            this.picturebox.TabStop = false;
+            // 
+            // btnImagem
+            // 
+            this.btnImagem.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnImagem.FlatAppearance.BorderSize = 0;
+            this.btnImagem.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnImagem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnImagem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnImagem.Image = ((System.Drawing.Image)(resources.GetObject("btnImagem.Image")));
+            this.btnImagem.Location = new System.Drawing.Point(815, 108);
+            this.btnImagem.Name = "btnImagem";
+            this.btnImagem.Size = new System.Drawing.Size(53, 41);
+            this.btnImagem.TabIndex = 23;
+            this.btnImagem.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(727, 108);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(82, 30);
+            this.label6.TabIndex = 24;
+            this.label6.Text = "Selecione \r\nUma Imagem:";
             // 
             // AdicionarConteudo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1131, 474);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.btnImagem);
+            this.Controls.Add(this.picturebox);
             this.Controls.Add(this.btnAdicionar);
             this.Controls.Add(this.date);
             this.Controls.Add(this.txtEscritor);
@@ -221,6 +268,7 @@
             this.Name = "AdicionarConteudo";
             this.Text = "AdicionarConteudo";
             this.Load += new System.EventHandler(this.AdicionarConteudo_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.picturebox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -237,5 +285,8 @@
         private Guna.UI2.WinForms.Guna2TextBox txtEscritor;
         private Guna.UI2.WinForms.Guna2DateTimePicker date;
         private Guna.UI2.WinForms.Guna2GradientButton btnAdicionar;
+        private Guna.UI2.WinForms.Guna2PictureBox picturebox;
+        private Button btnImagem;
+        private Label label6;
     }
 }

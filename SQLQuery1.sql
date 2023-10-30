@@ -40,7 +40,8 @@ TamanhoVideo INT NOT NULL,
 dataCadastroVideo DATEtime NOT NULL,  
 );
 
- 
+ drop table Pdf
+
 
 CREATE TABLE Pdf 
 ( 
@@ -59,3 +60,20 @@ nomeFoto VARCHAR(100) NOT NULL,
 Tamanho INT NOT NULL,  
 DataCdastroFoto DATEtime NOT NULL,  
 ); 
+
+CREATE TABLE Adicionar 
+( 
+idAdicionar INT PRIMARY KEY,  
+Titulo VARCHAR(100) NOT NULL,  
+Texto VARCHAR(max) NOT NULL,  
+NomeEscritor VARCHAR(100) NOT NULL,  
+data DATE NOT NULL,  
+idFotos INT, 
+FOREIGN KEY(idFotos) REFERENCES Fotos (idFotos),
+idAudio INT,  
+FOREIGN KEY(idAudio) REFERENCES Audio (idAudio),
+idPdf INT,  
+FOREIGN KEY(idPdf) REFERENCES Pdf (idPdf),
+idVideos INT,  
+FOREIGN KEY(idVideos) REFERENCES Videos (idVideo),
+);

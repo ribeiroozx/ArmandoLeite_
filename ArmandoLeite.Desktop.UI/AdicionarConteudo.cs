@@ -31,5 +31,10 @@ namespace ArmandoLeite.Desktop.UI
         {
 
         }
+
+        private void btnAdicionar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
