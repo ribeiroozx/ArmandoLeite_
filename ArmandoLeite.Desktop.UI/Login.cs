@@ -21,5 +21,10 @@ namespace ArmandoLeite.Desktop.UI
         {
 
         }
+
+        private void guna2ResizeBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
