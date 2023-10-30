@@ -34,7 +34,8 @@ namespace ArmandoLeite.Desktop.UI
 
         private void guna2TileButton1_Click(object sender, EventArgs e)
         {
-
+            DAL.ConteudoDAL ad = new DAL.ConteudoDAL();
+            ad.Adicionar(txtTitulo.Text, txtTexto.Text, txtEscritor.Text, date.Text);
         }
     }
 }
