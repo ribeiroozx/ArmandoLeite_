@@ -10,31 +10,17 @@ using System.Windows.Forms;
 
 namespace ArmandoLeite.Desktop.UI
 {
-    public partial class AdicionarConteudo : Form
+    public partial class Teste : Form
     {
-        public AdicionarConteudo()
+        public Teste()
         {
             InitializeComponent();
         }
 
-        private void AdicionarConteudo_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtnome_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void guna2TileButton1_Click(object sender, EventArgs e)
         {
-
+            DAL.ConteudoDAL conteudoDAL = new DAL.ConteudoDAL();
+            conteudoDAL.Adicionar(txtTitulo.Text,txtTexto.Text,txtEscritor.Text,date.Text);
         }
     }
 }
