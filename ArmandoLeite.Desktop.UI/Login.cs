@@ -16,15 +16,5 @@ namespace ArmandoLeite.Desktop.UI
         {
             InitializeComponent();
         }
-
-        private void btnEntrar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2ResizeBox1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
