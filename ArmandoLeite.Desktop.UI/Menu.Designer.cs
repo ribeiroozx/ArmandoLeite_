@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnVisualizar = new Guna.UI2.WinForms.Guna2TileButton();
-            this.btnAdicionar = new Guna.UI2.WinForms.Guna2TileButton();
+            this.btnVisualizar = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnAddConteudo = new Guna.UI2.WinForms.Guna2GradientButton();
             this.SuspendLayout();
             // 
             // label1
@@ -49,44 +49,57 @@
             // 
             // btnVisualizar
             // 
-            this.btnVisualizar.CustomizableEdges = customizableEdges5;
+            this.btnVisualizar.BackColor = System.Drawing.Color.Transparent;
+            this.btnVisualizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnVisualizar.BorderRadius = 20;
+            this.btnVisualizar.Cursor = System.Windows.Forms.Cursors.SizeNS;
+            this.btnVisualizar.CustomizableEdges = customizableEdges1;
             this.btnVisualizar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnVisualizar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnVisualizar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnVisualizar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnVisualizar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnVisualizar.FillColor = System.Drawing.Color.Lime;
+            this.btnVisualizar.FillColor2 = System.Drawing.Color.LimeGreen;
             this.btnVisualizar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnVisualizar.ForeColor = System.Drawing.Color.White;
-            this.btnVisualizar.Location = new System.Drawing.Point(336, 151);
+            this.btnVisualizar.ForeColor = System.Drawing.Color.Black;
+            this.btnVisualizar.Location = new System.Drawing.Point(336, 159);
             this.btnVisualizar.Name = "btnVisualizar";
-            this.btnVisualizar.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            this.btnVisualizar.ShadowDecoration.CustomizableEdges = customizableEdges2;
             this.btnVisualizar.Size = new System.Drawing.Size(109, 48);
-            this.btnVisualizar.TabIndex = 16;
+            this.btnVisualizar.TabIndex = 19;
             this.btnVisualizar.Text = "Visualizar Conteúdo";
-            this.btnVisualizar.Click += new System.EventHandler(this.guna2TileButton1_Click);
             // 
-            // btnAdicionar
+            // btnAddConteudo
             // 
-            this.btnAdicionar.CustomizableEdges = customizableEdges7;
-            this.btnAdicionar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAdicionar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAdicionar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAdicionar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAdicionar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAdicionar.ForeColor = System.Drawing.Color.White;
-            this.btnAdicionar.Location = new System.Drawing.Point(336, 227);
-            this.btnAdicionar.Name = "btnAdicionar";
-            this.btnAdicionar.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            this.btnAdicionar.Size = new System.Drawing.Size(109, 48);
-            this.btnAdicionar.TabIndex = 17;
-            this.btnAdicionar.Text = "Adicionar Conteúdo";
-            this.btnAdicionar.Click += new System.EventHandler(this.guna2TileButton2_Click);
+            this.btnAddConteudo.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddConteudo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnAddConteudo.BorderRadius = 20;
+            this.btnAddConteudo.Cursor = System.Windows.Forms.Cursors.SizeNS;
+            this.btnAddConteudo.CustomizableEdges = customizableEdges3;
+            this.btnAddConteudo.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddConteudo.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddConteudo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAddConteudo.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAddConteudo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAddConteudo.FillColor = System.Drawing.Color.Lime;
+            this.btnAddConteudo.FillColor2 = System.Drawing.Color.LimeGreen;
+            this.btnAddConteudo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAddConteudo.ForeColor = System.Drawing.Color.Black;
+            this.btnAddConteudo.Location = new System.Drawing.Point(336, 232);
+            this.btnAddConteudo.Name = "btnAddConteudo";
+            this.btnAddConteudo.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            this.btnAddConteudo.Size = new System.Drawing.Size(109, 48);
+            this.btnAddConteudo.TabIndex = 20;
+            this.btnAddConteudo.Text = "Adicionar Conteúdo";
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnAdicionar);
+            this.Controls.Add(this.btnAddConteudo);
             this.Controls.Add(this.btnVisualizar);
             this.Controls.Add(this.label1);
             this.Name = "Menu";
@@ -99,7 +112,7 @@
         #endregion
 
         private Label label1;
-        private Guna.UI2.WinForms.Guna2TileButton btnVisualizar;
-        private Guna.UI2.WinForms.Guna2TileButton btnAdicionar;
+        private Guna.UI2.WinForms.Guna2GradientButton btnVisualizar;
+        private Guna.UI2.WinForms.Guna2GradientButton btnAddConteudo;
     }
 }
