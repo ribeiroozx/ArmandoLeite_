@@ -37,5 +37,10 @@ namespace ArmandoLeite.Desktop.UI
             DAL.ConteudoDAL ad = new DAL.ConteudoDAL();
             ad.Adicionar(txtTitulo.Text, txtTexto.Text, txtEscritor.Text, date.Text);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

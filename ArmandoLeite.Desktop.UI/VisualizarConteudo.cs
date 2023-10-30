@@ -36,5 +36,10 @@ namespace ArmandoLeite.Desktop.UI
         {
 
         }
+
+        private void groupbox_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
