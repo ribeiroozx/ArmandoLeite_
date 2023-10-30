@@ -30,19 +30,22 @@
         {
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.btnLogin = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtSenha = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtLogin = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnLogin = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
             this.guna2GroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,6 +59,7 @@
             this.guna2GroupBox1.Controls.Add(this.guna2HtmlLabel1);
             this.guna2GroupBox1.Controls.Add(this.txtLogin);
             this.guna2GroupBox1.CustomizableEdges = customizableEdges7;
+            this.guna2Transition1.SetDecoration(this.guna2GroupBox1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.Black;
             this.guna2GroupBox1.Location = new System.Drawing.Point(200, 41);
@@ -64,9 +68,34 @@
             this.guna2GroupBox1.Size = new System.Drawing.Size(367, 326);
             this.guna2GroupBox1.TabIndex = 7;
             // 
+            // btnLogin
+            // 
+            this.btnLogin.BackColor = System.Drawing.Color.Transparent;
+            this.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnLogin.BorderRadius = 20;
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.SizeNS;
+            this.btnLogin.CustomizableEdges = customizableEdges1;
+            this.guna2Transition1.SetDecoration(this.btnLogin, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.btnLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLogin.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLogin.FillColor = System.Drawing.Color.Lime;
+            this.btnLogin.FillColor2 = System.Drawing.Color.LimeGreen;
+            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnLogin.ForeColor = System.Drawing.Color.Black;
+            this.btnLogin.Location = new System.Drawing.Point(128, 230);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            this.btnLogin.Size = new System.Drawing.Size(109, 48);
+            this.btnLogin.TabIndex = 18;
+            this.btnLogin.Text = "Entrar";
+            // 
             // guna2HtmlLabel3
             // 
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.guna2HtmlLabel3, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2HtmlLabel3.Location = new System.Drawing.Point(66, 163);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(38, 17);
@@ -78,6 +107,7 @@
             this.txtSenha.BackColor = System.Drawing.SystemColors.Window;
             this.txtSenha.BorderRadius = 20;
             this.txtSenha.CustomizableEdges = customizableEdges3;
+            this.guna2Transition1.SetDecoration(this.txtSenha, Guna.UI2.AnimatorNS.DecorationType.None);
             this.txtSenha.DefaultText = "";
             this.txtSenha.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtSenha.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -98,6 +128,7 @@
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.guna2HtmlLabel2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(66, 95);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(36, 17);
@@ -107,6 +138,7 @@
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.guna2HtmlLabel1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(151, 0);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
@@ -119,6 +151,7 @@
             this.txtLogin.BackColor = System.Drawing.SystemColors.Window;
             this.txtLogin.BorderRadius = 20;
             this.txtLogin.CustomizableEdges = customizableEdges5;
+            this.guna2Transition1.SetDecoration(this.txtLogin, Guna.UI2.AnimatorNS.DecorationType.None);
             this.txtLogin.DefaultText = "";
             this.txtLogin.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -136,28 +169,25 @@
             this.txtLogin.Size = new System.Drawing.Size(200, 36);
             this.txtLogin.TabIndex = 11;
             // 
-            // btnLogin
+            // guna2Transition1
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.Transparent;
-            this.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnLogin.BorderRadius = 20;
-            this.btnLogin.Cursor = System.Windows.Forms.Cursors.SizeNS;
-            this.btnLogin.CustomizableEdges = customizableEdges1;
-            this.btnLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLogin.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnLogin.FillColor = System.Drawing.Color.Lime;
-            this.btnLogin.FillColor2 = System.Drawing.Color.LimeGreen;
-            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnLogin.ForeColor = System.Drawing.Color.Black;
-            this.btnLogin.Location = new System.Drawing.Point(128, 230);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            this.btnLogin.Size = new System.Drawing.Size(109, 48);
-            this.btnLogin.TabIndex = 18;
-            this.btnLogin.Text = "Entrar";
+            this.guna2Transition1.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.guna2Transition1.DefaultAnimation = animation1;
             // 
             // Login
             // 
@@ -166,6 +196,8 @@
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(792, 454);
             this.Controls.Add(this.guna2GroupBox1);
+            this.guna2Transition1.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
             this.Text = "]";
             this.guna2GroupBox1.ResumeLayout(false);
@@ -182,5 +214,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2TextBox txtLogin;
         private Guna.UI2.WinForms.Guna2GradientButton btnLogin;
+        private Guna.UI2.WinForms.Guna2Transition guna2Transition1;
     }
 }

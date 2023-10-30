@@ -26,5 +26,15 @@ namespace ArmandoLeite.Desktop.UI
         {
 
         }
+
+        private void VisualizarConteudo_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
