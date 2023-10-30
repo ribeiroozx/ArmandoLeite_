@@ -19,7 +19,6 @@ C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.Desktop.UI\ob
 C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.Login.resources
 C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.Menu.resources
 C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.Properties.Resources.resources
-C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.Teste.resources
 C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.VisualizarConteudo.resources
 C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.csproj.GenerateResource.cache
 C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.GeneratedMSBuildEditorConfig.editorconfig
