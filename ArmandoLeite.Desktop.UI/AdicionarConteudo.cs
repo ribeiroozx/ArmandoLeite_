@@ -34,7 +34,7 @@ namespace ArmandoLeite.Desktop.UI
 
         private void guna2TileButton1_Click(object sender, EventArgs e)
         {
-          
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -53,23 +53,14 @@ namespace ArmandoLeite.Desktop.UI
                 }
             }
         }
-    }
 
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
             DAL.ConteudoDAL ad = new DAL.ConteudoDAL();
-            ad.Adicionar(txtTitulo.Text, txtTexto.Text, txtEscritor.Text, date.Text);
+            ad.Adicionar(txtTitulo.Text, txtTexto.Text, txtEscritor.Text, date.Text,btnImagem.Text,btnVideo.Text,btnPdf.Text,btnAudio.Text);
 
-            if (!string.IsNullOrWhiteSpace(txtTitulo.Text) && !string.IsNullOrWhiteSpace(txtTexto.Text) && !string.IsNullOrWhiteSpace(txtEscritor.Text) && !string.IsNullOrWhiteSpace(date.Text))
-            {
-                ad.Adicionar(txtTitulo.Text, txtTexto.Text, txtEscritor.Text, date.Text);
-                MessageBox.Show("Conteúdo Cadastrado");
-            }
-            else
-            {
-                MessageBox.Show("Preencha todos os campos para cadastrar o conteúdo.");
-            }
         }
+
 
         private void btnImagem_Click(object sender, EventArgs e)
         {
@@ -87,8 +78,44 @@ namespace ArmandoLeite.Desktop.UI
                 }
             }
         }
-        
-        
+
+        private void btnPdf_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            {
+                openFileDialog.Title = "Selecionar Imagem";
+                openFileDialog.Filter = "Arquivos de Pdf|*.pdf|Todos os Arquivos|*.*";
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    byte[] selectedImageData;
+
+                    string imagePath = openFileDialog.FileName;
+                    selectedImageData = File.ReadAllBytes(imagePath); // Armazena a imagem selecionada em uma variável de classe
+                }
+            }
+
+        }
+
+        private void btnAudio_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            {
+                openFileDialog.Title = "Selecionar Imagem";
+                openFileDialog.Filter = "Arquivos de audio|*.mp3;*.ogg;*.wma;*.wav|Todos os Arquivos|*.*";
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    byte[] selectedImageData;
+
+                    string imagePath = openFileDialog.FileName;
+                    selectedImageData = File.ReadAllBytes(imagePath);
+                 
+                        // Armazena a imagem selecionada em uma variável de classe
+                }
+            }
+        }
+
+       
     }
-    
 }

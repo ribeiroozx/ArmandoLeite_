@@ -39,14 +39,6 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdicionarConteudo));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -59,20 +51,12 @@
             this.btnAdicionar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label6 = new System.Windows.Forms.Label();
             this.btnImagem = new System.Windows.Forms.Button();
-            this.picturebox = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.btnVideo = new System.Windows.Forms.Button();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.btnPdf = new System.Windows.Forms.Button();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnAudio = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.picturebox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -251,19 +235,6 @@
             this.btnImagem.UseVisualStyleBackColor = true;
             this.btnImagem.Click += new System.EventHandler(this.btnImagem_Click);
             // 
-            // picturebox
-            // 
-            this.picturebox.BackColor = System.Drawing.Color.Transparent;
-            this.picturebox.CustomizableEdges = customizableEdges11;
-            this.picturebox.ImageRotate = 0F;
-            this.picturebox.Location = new System.Drawing.Point(761, 76);
-            this.picturebox.Name = "picturebox";
-            this.picturebox.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            this.picturebox.Size = new System.Drawing.Size(119, 89);
-            this.picturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picturebox.TabIndex = 30;
-            this.picturebox.TabStop = false;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -288,19 +259,6 @@
             this.btnVideo.UseVisualStyleBackColor = true;
             this.btnVideo.Click += new System.EventHandler(this.button1_Click);
             // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.CustomizableEdges = customizableEdges13;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(761, 184);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(119, 89);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 33;
-            this.guna2PictureBox1.TabStop = false;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -323,19 +281,7 @@
             this.btnPdf.Size = new System.Drawing.Size(53, 53);
             this.btnPdf.TabIndex = 37;
             this.btnPdf.UseVisualStyleBackColor = true;
-            // 
-            // guna2PictureBox2
-            // 
-            this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox2.CustomizableEdges = customizableEdges15;
-            this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(761, 289);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            this.guna2PictureBox2.Size = new System.Drawing.Size(119, 89);
-            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox2.TabIndex = 36;
-            this.guna2PictureBox2.TabStop = false;
+            this.btnPdf.Click += new System.EventHandler(this.btnPdf_Click);
             // 
             // label9
             // 
@@ -345,19 +291,6 @@
             this.label9.Size = new System.Drawing.Size(64, 30);
             this.label9.TabIndex = 41;
             this.label9.Text = "Selecione \r\nUm Audio:\r\n";
-            // 
-            // guna2PictureBox3
-            // 
-            this.guna2PictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox3.CustomizableEdges = customizableEdges17;
-            this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(761, 396);
-            this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            this.guna2PictureBox3.Size = new System.Drawing.Size(119, 89);
-            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox3.TabIndex = 39;
-            this.guna2PictureBox3.TabStop = false;
             // 
             // btnAudio
             // 
@@ -372,6 +305,7 @@
             this.btnAudio.Size = new System.Drawing.Size(48, 40);
             this.btnAudio.TabIndex = 40;
             this.btnAudio.UseVisualStyleBackColor = true;
+            this.btnAudio.Click += new System.EventHandler(this.btnAudio_Click);
             // 
             // AdicionarConteudo
             // 
@@ -381,16 +315,12 @@
             this.ClientSize = new System.Drawing.Size(929, 535);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.btnAudio);
-            this.Controls.Add(this.guna2PictureBox3);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnPdf);
-            this.Controls.Add(this.guna2PictureBox2);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnVideo);
-            this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnImagem);
-            this.Controls.Add(this.picturebox);
             this.Controls.Add(this.btnAdicionar);
             this.Controls.Add(this.date);
             this.Controls.Add(this.txtEscritor);
@@ -404,10 +334,6 @@
             this.Name = "AdicionarConteudo";
             this.Text = "AdicionarConteudo";
             this.Load += new System.EventHandler(this.AdicionarConteudo_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.picturebox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -426,15 +352,11 @@
         private Guna.UI2.WinForms.Guna2GradientButton btnAdicionar;
         private Label label6;
         private Button btnImagem;
-        private Guna.UI2.WinForms.Guna2PictureBox picturebox;
         private Label label7;
         private Button btnVideo;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Label label8;
         private Button btnPdf;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private Label label9;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
         private Button btnAudio;
     }
 }
