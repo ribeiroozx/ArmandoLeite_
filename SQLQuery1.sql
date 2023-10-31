@@ -29,8 +29,7 @@ CREATE TABLE Audio
 ( 
 idAudio INT PRIMARY KEY identity (1,1) not null,  
 NomeAudio VARCHAR(100) NOT NULL, 
-duracao time NOT NULL,  
-tamanhoAudio INT NOT NULL,  
+DadoAudio varbinary (max) not null,
 dataCadastroAudio DATEtime NOT NULL,  
 FkConteudo int not null,
 foreign key (FKConteudo) references Conteudo (idConteudo)
@@ -42,8 +41,7 @@ CREATE TABLE Videos
 ( 
 idVideo INT PRIMARY KEY identity (1,1) not null,  
 NomeVideo VARCHAR(100) NOT NULL, 
-duracao time NOT NULL,  
-TamanhoVideo INT NOT NULL,   
+DadoVideo varbinary(max) not null,   
 dataCadastroVideo DATEtime NOT NULL,  
 FkConteudo int not null,
 foreign key (FKConteudo) references Conteudo (idConteudo)
@@ -56,7 +54,7 @@ CREATE TABLE Pdf
 ( 
 idAudio INT PRIMARY KEY identity (1,1) not null,  
 NomePdf VARCHAR(100) NOT NULL,  
-TamanhoPdf INT NOT NULL,  
+DadoPdf varbinary (max) not null,
 dataCadastroPdf DATEtime NOT NULL,  
 FkConteudo int not null,
 foreign key (FKConteudo) references Conteudo (idConteudo)
@@ -68,7 +66,7 @@ CREATE TABLE Fotos
 ( 
 idFotos INT PRIMARY KEY identity (1,1) not null,  
 nomeFoto VARCHAR(100) NOT NULL,  
-Tamanho INT NOT NULL,  
+DadoFoto varbinary (max) not null,
 DataCdastroFoto DATEtime NOT NULL,  
 FkConteudo int not null,
 foreign key (FKConteudo) references Conteudo (idConteudo)
