@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\mauricio.snasciment1\\Documents\\GitHub\\ArmandoLeite_\\ArmandoLeite.Desktop.UI\\ArmandoLeite.Desktop.UI.csproj": {}
   },
   "projects": {
@@ -12,12 +13,29 @@
         "projectPath": "C:\\Users\\mauricio.snasciment1\\Documents\\GitHub\\ArmandoLeite_\\ArmandoLeite.Desktop.UI\\ArmandoLeite.Desktop.UI.csproj",
         "packagesPath": "C:\\Users\\mauricio.snasciment1\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mauricio.snasciment1\\Documents\\GitHub\\ArmandoLeite_\\ArmandoLeite.Desktop.UI\\obj\\",
+=======
+    "C:\\Users\\marcel.vbdias\\Documents\\GitHub\\ArmandoLeite_\\ArmandoLeite.Desktop.UI\\ArmandoLeite.Desktop.UI.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\marcel.vbdias\\Documents\\GitHub\\ArmandoLeite_\\ArmandoLeite.Desktop.UI\\ArmandoLeite.Desktop.UI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\marcel.vbdias\\Documents\\GitHub\\ArmandoLeite_\\ArmandoLeite.Desktop.UI\\ArmandoLeite.Desktop.UI.csproj",
+        "projectName": "ArmandoLeite.Desktop.UI",
+        "projectPath": "C:\\Users\\marcel.vbdias\\Documents\\GitHub\\ArmandoLeite_\\ArmandoLeite.Desktop.UI\\ArmandoLeite.Desktop.UI.csproj",
+        "packagesPath": "C:\\Users\\marcel.vbdias\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marcel.vbdias\\Documents\\GitHub\\ArmandoLeite_\\ArmandoLeite.Desktop.UI\\obj\\",
+>>>>>>> 3e2f5f87b634e548fede9c6adc07464cf2e73a5c
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\mauricio.snasciment1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\marcel.vbdias\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 3e2f5f87b634e548fede9c6adc07464cf2e73a5c
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -47,6 +65,14 @@
             "Guna.UI2.WinForms": {
               "target": "Package",
               "version": "[2.0.4.5, )"
+            },
+            "OpenDialog": {
+              "target": "Package",
+              "version": "[1.1.1, )"
+            },
+            "OpenDialogWindowHandler": {
+              "target": "Package",
+              "version": "[0.0.0.1, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",

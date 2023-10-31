@@ -21,5 +21,25 @@ namespace ArmandoLeite.Desktop.UI
         {
 
         }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void VisualizarConteudo_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void groupbox_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
