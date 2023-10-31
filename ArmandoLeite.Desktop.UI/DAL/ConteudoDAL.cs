@@ -12,24 +12,24 @@ namespace ArmandoLeite.Desktop.UI.DAL
     {
         #region Método Adicionar Postagens
 
-        public int Adicionar(string titulo, string texto, string nomeEscritor, string data, string selectedImageData )
+        public int Adicionar(string titulo, string texto, string nomeEscritor, string data, string selectedFoto, string selectedPDF, string selectedVideo, string selectedAudio)
         {
             SqlConnection conn = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ArmandoLeite;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             conn.Open();
 
-            SqlCommand cmd = new SqlCommand("insert into Adicionar OUTPUT inserted.idAdicionar values  ('" + titulo + "','" + texto + "','" + nomeEscritor + "','" + data + "', '" + selectedImageData + "')", conn);
+            SqlCommand cmd = new SqlCommand("insert into Adicionar OUTPUT inserted.idAdicionar values  ('" + titulo + "','" + texto + "','" + nomeEscritor + "','" + data + "', '" + selectedFoto + "', '" + selectedPDF + "','" + selectedVideo + "', '" + selectedAudio+ "',)", conn);
             int idAdicionar = Convert.ToInt32(cmd.ExecuteScalar());
 
-            SqlCommand cmd2 = new SqlCommand("insert into Audio values  ('" + idAdicionar + "','" + selectedImageData + "')", conn);
+            SqlCommand cmd2 = new SqlCommand("insert into Audio values  ('" + idAdicionar + "','" + selectedAudio + "')", conn);
             cmd2.ExecuteNonQuery();
 
-            SqlCommand cmd3 = new SqlCommand("insert into Fotos values  ('" + idAdicionar + "')", conn);
+            SqlCommand cmd3 = new SqlCommand("insert into Fotos values  ('" + idAdicionar + "', '" + selectedFoto + "')", conn);
             cmd3.ExecuteNonQuery();
 
-            SqlCommand cmd4 = new SqlCommand("insert into Pdf values  ('" + idAdicionar + "')", conn);
+            SqlCommand cmd4 = new SqlCommand("insert into Pdf values  ('" + idAdicionar + "', '" + selectedPDF + "')", conn);
             cmd4.ExecuteNonQuery();
 
-            SqlCommand cmd5 = new SqlCommand("insert into Videos values  ('" + idAdicionar + "')", conn);
+            SqlCommand cmd5 = new SqlCommand("insert into Videos values  ('" + idAdicionar + "', '" + selectedVideo + "')", conn);
             cmd5.ExecuteNonQuery();
             conn.Close();
             conn.Dispose();
