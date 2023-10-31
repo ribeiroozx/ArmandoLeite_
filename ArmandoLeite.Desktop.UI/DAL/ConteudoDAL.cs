@@ -13,18 +13,6 @@ namespace ArmandoLeite.Desktop.UI.DAL
 
         public int Adicionar(string titulo, string texto, string nomeEscritor, string data)
         {
-            //using (OpenFileDialog openFileDialog = new OpenFileDialog())
-            //{
-            //    openFileDialog.Title = "Selecionar Imagem";
-            //    openFileDialog.Filter = "Arquivos de Imagem|*.jpg;*.jpeg;*.png;*.gif;*bmp|Todos os Arquivos";
-
-
-            //    if (openFileDialog.ShowDialog() == DialogResult.OK)
-            //    {
-            //        byte[] selectedImageData;
-            //        string imagePath = openFileDialog.FileName;
-            //        selectedImageData = File.ReadAllBytes(imagePath);//Armazena a imagem selecionada 
-            //    }
 
             SqlConnection conn = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ArmandoLeite;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             conn.Open();
@@ -43,7 +31,6 @@ namespace ArmandoLeite.Desktop.UI.DAL
 
             SqlCommand cmd5 = new SqlCommand("insert into Videos values  ('" + idAdicionar +"')", conn);
             cmd5.ExecuteNonQuery();
-
 
 
             conn.Close();
