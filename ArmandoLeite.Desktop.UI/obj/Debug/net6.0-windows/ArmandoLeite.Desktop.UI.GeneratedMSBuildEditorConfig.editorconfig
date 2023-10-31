@@ -13,8 +13,4 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ArmandoLeite.Desktop.UI
-<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\mauricio.snasciment1\Documents\GitHub\ArmandoLeite_\ArmandoLeite.Desktop.UI\
-=======
-build_property.ProjectDir = C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.Desktop.UI\
->>>>>>> 3e2f5f87b634e548fede9c6adc07464cf2e73a5c
