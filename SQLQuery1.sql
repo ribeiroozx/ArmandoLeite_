@@ -8,7 +8,12 @@ senha VARCHAR(20) NOT NULL,
 dataAdministrador datetime not null,
 );
 
- 
+ drop table Pdf
+ drop table adminstrador
+ drop table Audio
+ drop table Fotos
+ drop table Conteudo
+ drop table Videos
 
 --CREATE TABLE conteudo 
 --( 
@@ -27,6 +32,8 @@ NomeAudio VARCHAR(100) NOT NULL,
 duracao time NOT NULL,  
 tamanhoAudio INT NOT NULL,  
 dataCadastroAudio DATEtime NOT NULL,  
+FkConteudo int not null,
+foreign key (FKConteudo) references Conteudo (idConteudo)
 );
 
  
@@ -38,9 +45,11 @@ NomeVideo VARCHAR(100) NOT NULL,
 duracao time NOT NULL,  
 TamanhoVideo INT NOT NULL,   
 dataCadastroVideo DATEtime NOT NULL,  
+FkConteudo int not null,
+foreign key (FKConteudo) references Conteudo (idConteudo)
 );
 
- drop table Pdf
+ 
 
 
 CREATE TABLE Pdf 
@@ -49,6 +58,8 @@ idAudio INT PRIMARY KEY identity (1,1) not null,
 NomePdf VARCHAR(100) NOT NULL,  
 TamanhoPdf INT NOT NULL,  
 dataCadastroPdf DATEtime NOT NULL,  
+FkConteudo int not null,
+foreign key (FKConteudo) references Conteudo (idConteudo)
 );
 
  
@@ -59,21 +70,15 @@ idFotos INT PRIMARY KEY identity (1,1) not null,
 nomeFoto VARCHAR(100) NOT NULL,  
 Tamanho INT NOT NULL,  
 DataCdastroFoto DATEtime NOT NULL,  
+FkConteudo int not null,
+foreign key (FKConteudo) references Conteudo (idConteudo)
 ); 
 
-CREATE TABLE Adicionar
+CREATE TABLE Conteudo
 (
-    idAdicionar  INT PRIMARY KEY identity (1,1) NOT NULL,
+    idConteudo INT PRIMARY KEY identity (1,1) NOT NULL,
     Titulo       VARCHAR (100) NOT NULL,
     Texto        VARCHAR (MAX) NOT NULL,
     NomeEscritor VARCHAR (100) NOT NULL,
     data         varchar(max)  NOT NULL,
-    idFotos      INT           NULL,
-    idAudio      INT           NULL,
-    idPdf        INT           NULL,
-    idVideos     INT           NULL,
-    FOREIGN KEY (idFotos) REFERENCES Fotos (idFotos),
-    FOREIGN KEY (idAudio) REFERENCES Audio (idAudio),
-    FOREIGN KEY (idPdf) REFERENCES Pdf (idPdf),
-    FOREIGN KEY (idVideos) REFERENCES Videos (idVideo)
 );
