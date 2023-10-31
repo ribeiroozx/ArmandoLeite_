@@ -34,14 +34,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VisualizarConteudo));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -59,14 +51,17 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnEditarPopUp = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnEditar = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnExcluir = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.groupbox = new Guna.UI2.WinForms.Guna2GroupBox();
             this.label9 = new System.Windows.Forms.Label();
             this.btnAudio = new System.Windows.Forms.Button();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -87,13 +82,18 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnEditarPopUp = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnEditar = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnExcluir = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.groupbox = new Guna.UI2.WinForms.Guna2GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.guna2GroupBox1.SuspendLayout();
-            this.groupbox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturebox)).BeginInit();
+            this.groupbox.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2DataGridView1
@@ -186,103 +186,6 @@
             this.guna2GroupBox1.Size = new System.Drawing.Size(892, 508);
             this.guna2GroupBox1.TabIndex = 21;
             this.guna2GroupBox1.Visible = false;
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(420, 2);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(70, 34);
-            this.guna2HtmlLabel1.TabIndex = 29;
-            this.guna2HtmlLabel1.Text = "Editar";
-            // 
-            // btnEditarPopUp
-            // 
-            this.btnEditarPopUp.BackColor = System.Drawing.Color.Transparent;
-            this.btnEditarPopUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnEditarPopUp.BorderRadius = 20;
-            this.btnEditarPopUp.Cursor = System.Windows.Forms.Cursors.SizeNS;
-            this.btnEditarPopUp.CustomizableEdges = customizableEdges17;
-            this.btnEditarPopUp.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnEditarPopUp.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnEditarPopUp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnEditarPopUp.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnEditarPopUp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnEditarPopUp.FillColor = System.Drawing.Color.Lime;
-            this.btnEditarPopUp.FillColor2 = System.Drawing.Color.LimeGreen;
-            this.btnEditarPopUp.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnEditarPopUp.ForeColor = System.Drawing.Color.Black;
-            this.btnEditarPopUp.Location = new System.Drawing.Point(399, 442);
-            this.btnEditarPopUp.Name = "btnEditarPopUp";
-            this.btnEditarPopUp.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            this.btnEditarPopUp.Size = new System.Drawing.Size(109, 48);
-            this.btnEditarPopUp.TabIndex = 28;
-            this.btnEditarPopUp.Text = "Editar";
-            this.btnEditarPopUp.Click += new System.EventHandler(this.btnEditar_Click);
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.BackColor = System.Drawing.Color.Transparent;
-            this.btnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnEditar.BorderRadius = 20;
-            this.btnEditar.Cursor = System.Windows.Forms.Cursors.SizeNS;
-            this.btnEditar.CustomizableEdges = customizableEdges21;
-            this.btnEditar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnEditar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnEditar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnEditar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnEditar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnEditar.FillColor = System.Drawing.Color.Lime;
-            this.btnEditar.FillColor2 = System.Drawing.Color.LimeGreen;
-            this.btnEditar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnEditar.ForeColor = System.Drawing.Color.Black;
-            this.btnEditar.Location = new System.Drawing.Point(991, 150);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.ShadowDecoration.CustomizableEdges = customizableEdges22;
-            this.btnEditar.Size = new System.Drawing.Size(109, 48);
-            this.btnEditar.TabIndex = 29;
-            this.btnEditar.Text = "Editar";
-            // 
-            // btnExcluir
-            // 
-            this.btnExcluir.BackColor = System.Drawing.Color.Transparent;
-            this.btnExcluir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnExcluir.BorderRadius = 20;
-            this.btnExcluir.Cursor = System.Windows.Forms.Cursors.SizeNS;
-            this.btnExcluir.CustomizableEdges = customizableEdges23;
-            this.btnExcluir.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnExcluir.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnExcluir.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnExcluir.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnExcluir.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnExcluir.FillColor = System.Drawing.Color.Crimson;
-            this.btnExcluir.FillColor2 = System.Drawing.Color.PaleVioletRed;
-            this.btnExcluir.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnExcluir.ForeColor = System.Drawing.Color.Black;
-            this.btnExcluir.Location = new System.Drawing.Point(991, 73);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.ShadowDecoration.CustomizableEdges = customizableEdges24;
-            this.btnExcluir.Size = new System.Drawing.Size(109, 48);
-            this.btnExcluir.TabIndex = 30;
-            this.btnExcluir.Text = "Excluir";
-            // 
-            // groupbox
-            // 
-            this.groupbox.BorderColor = System.Drawing.Color.SkyBlue;
-            this.groupbox.Controls.Add(this.guna2GroupBox1);
-            this.groupbox.CustomBorderColor = System.Drawing.Color.Black;
-            this.groupbox.CustomizableEdges = customizableEdges25;
-            this.groupbox.FillColor = System.Drawing.Color.SkyBlue;
-            this.groupbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.groupbox.Location = new System.Drawing.Point(112, 320);
-            this.groupbox.Name = "groupbox";
-            this.groupbox.ShadowDecoration.CustomizableEdges = customizableEdges26;
-            this.groupbox.Size = new System.Drawing.Size(895, 554);
-            this.groupbox.TabIndex = 31;
-            this.groupbox.Click += new System.EventHandler(this.groupbox_Click);
             // 
             // label9
             // 
@@ -544,6 +447,103 @@
             this.label2.TabIndex = 42;
             this.label2.Text = "Título:";
             // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(420, 2);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(70, 34);
+            this.guna2HtmlLabel1.TabIndex = 29;
+            this.guna2HtmlLabel1.Text = "Editar";
+            // 
+            // btnEditarPopUp
+            // 
+            this.btnEditarPopUp.BackColor = System.Drawing.Color.Transparent;
+            this.btnEditarPopUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnEditarPopUp.BorderRadius = 20;
+            this.btnEditarPopUp.Cursor = System.Windows.Forms.Cursors.SizeNS;
+            this.btnEditarPopUp.CustomizableEdges = customizableEdges17;
+            this.btnEditarPopUp.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnEditarPopUp.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnEditarPopUp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEditarPopUp.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEditarPopUp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnEditarPopUp.FillColor = System.Drawing.Color.Lime;
+            this.btnEditarPopUp.FillColor2 = System.Drawing.Color.LimeGreen;
+            this.btnEditarPopUp.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnEditarPopUp.ForeColor = System.Drawing.Color.Black;
+            this.btnEditarPopUp.Location = new System.Drawing.Point(399, 442);
+            this.btnEditarPopUp.Name = "btnEditarPopUp";
+            this.btnEditarPopUp.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            this.btnEditarPopUp.Size = new System.Drawing.Size(109, 48);
+            this.btnEditarPopUp.TabIndex = 28;
+            this.btnEditarPopUp.Text = "Editar";
+            this.btnEditarPopUp.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.BackColor = System.Drawing.Color.Transparent;
+            this.btnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnEditar.BorderRadius = 20;
+            this.btnEditar.Cursor = System.Windows.Forms.Cursors.SizeNS;
+            this.btnEditar.CustomizableEdges = customizableEdges21;
+            this.btnEditar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnEditar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnEditar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEditar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEditar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnEditar.FillColor = System.Drawing.Color.Lime;
+            this.btnEditar.FillColor2 = System.Drawing.Color.LimeGreen;
+            this.btnEditar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnEditar.ForeColor = System.Drawing.Color.Black;
+            this.btnEditar.Location = new System.Drawing.Point(991, 150);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            this.btnEditar.Size = new System.Drawing.Size(109, 48);
+            this.btnEditar.TabIndex = 29;
+            this.btnEditar.Text = "Editar";
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.BackColor = System.Drawing.Color.Transparent;
+            this.btnExcluir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnExcluir.BorderRadius = 20;
+            this.btnExcluir.Cursor = System.Windows.Forms.Cursors.SizeNS;
+            this.btnExcluir.CustomizableEdges = customizableEdges23;
+            this.btnExcluir.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnExcluir.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnExcluir.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnExcluir.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnExcluir.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnExcluir.FillColor = System.Drawing.Color.Crimson;
+            this.btnExcluir.FillColor2 = System.Drawing.Color.PaleVioletRed;
+            this.btnExcluir.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnExcluir.ForeColor = System.Drawing.Color.Black;
+            this.btnExcluir.Location = new System.Drawing.Point(991, 73);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            this.btnExcluir.Size = new System.Drawing.Size(109, 48);
+            this.btnExcluir.TabIndex = 30;
+            this.btnExcluir.Text = "Excluir";
+            // 
+            // groupbox
+            // 
+            this.groupbox.BorderColor = System.Drawing.Color.SkyBlue;
+            this.groupbox.Controls.Add(this.guna2GroupBox1);
+            this.groupbox.CustomBorderColor = System.Drawing.Color.Black;
+            this.groupbox.CustomizableEdges = customizableEdges25;
+            this.groupbox.FillColor = System.Drawing.Color.SkyBlue;
+            this.groupbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.groupbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.groupbox.Location = new System.Drawing.Point(112, 320);
+            this.groupbox.Name = "groupbox";
+            this.groupbox.ShadowDecoration.CustomizableEdges = customizableEdges26;
+            this.groupbox.Size = new System.Drawing.Size(895, 554);
+            this.groupbox.TabIndex = 31;
+            this.groupbox.Click += new System.EventHandler(this.groupbox_Click);
+            // 
             // VisualizarConteudo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -560,11 +560,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();
-            this.groupbox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturebox)).EndInit();
+            this.groupbox.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
