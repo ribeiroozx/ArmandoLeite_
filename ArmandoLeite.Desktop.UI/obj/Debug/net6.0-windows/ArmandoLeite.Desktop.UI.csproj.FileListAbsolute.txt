@@ -52,7 +52,6 @@ C:\Users\gabriel.rcruz7\source\repos\ArmandoLeite\ArmandoLeite.Desktop.UI\obj\De
 C:\Users\gabriel.rcruz7\source\repos\ArmandoLeite\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.Login.resources
 C:\Users\gabriel.rcruz7\source\repos\ArmandoLeite\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.Menu.resources
 C:\Users\gabriel.rcruz7\source\repos\ArmandoLeite\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.Properties.Resources.resources
-C:\Users\gabriel.rcruz7\source\repos\ArmandoLeite\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.Teste.resources
 C:\Users\gabriel.rcruz7\source\repos\ArmandoLeite\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.VisualizarConteudo.resources
 C:\Users\gabriel.rcruz7\source\repos\ArmandoLeite\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.csproj.GenerateResource.cache
 C:\Users\gabriel.rcruz7\source\repos\ArmandoLeite\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.GeneratedMSBuildEditorConfig.editorconfig
