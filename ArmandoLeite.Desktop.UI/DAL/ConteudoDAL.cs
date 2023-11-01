@@ -14,26 +14,26 @@ namespace ArmandoLeite.Desktop.UI.DAL
 
         public int Adicionar(string titulo, string texto, string nomeEscritor, string data, string selectedFoto, string selectedPDF, string selectedVideo, string selectedAudio)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ArmandoLeite;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            SqlConnection conn = new SqlConnection(@"Data Source=FAC0539750W10-1;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             conn.Open();
 
-            SqlCommand cmd = new SqlCommand("insert into Adicionar OUTPUT inserted.idAdicionar values  ('" + titulo + "','" + texto + "','" + nomeEscritor + "','" + data + "', '" + selectedFoto + "', '" + selectedPDF + "','" + selectedVideo + "', '" + selectedAudio+ "',)", conn);
-            int idAdicionar = Convert.ToInt32(cmd.ExecuteScalar());
+            SqlCommand cmd = new SqlCommand("insert into Conteudo OUTPUT inserted.idConteudo  values  ('" + titulo + "','" + texto + "','" + nomeEscritor + "','" + data + "', '" + selectedFoto + "', '" + selectedPDF + "','" + selectedVideo + "', '" + selectedAudio+ "')", conn);
+            int idConteudo = Convert.ToInt32(cmd.ExecuteScalar());
 
-            SqlCommand cmd2 = new SqlCommand("insert into Audio values  ('" + idAdicionar + "','" + selectedAudio + "')", conn);
+            SqlCommand cmd2 = new SqlCommand("insert into Audio values  ('" + idConteudo + "','" + selectedAudio + "')", conn);
             cmd2.ExecuteNonQuery();
 
-            SqlCommand cmd3 = new SqlCommand("insert into Fotos values  ('" + idAdicionar + "', '" + selectedFoto + "')", conn);
+            SqlCommand cmd3 = new SqlCommand("insert into Fotos values  ('" + idConteudo + "', '" + selectedFoto + "')", conn);
             cmd3.ExecuteNonQuery();
 
-            SqlCommand cmd4 = new SqlCommand("insert into Pdf values  ('" + idAdicionar + "', '" + selectedPDF + "')", conn);
+            SqlCommand cmd4 = new SqlCommand("insert into Pdf values  ('" + idConteudo + "', '" + selectedPDF + "')", conn);
             cmd4.ExecuteNonQuery();
 
-            SqlCommand cmd5 = new SqlCommand("insert into Videos values  ('" + idAdicionar + "', '" + selectedVideo + "')", conn);
+            SqlCommand cmd5 = new SqlCommand("insert into Videos values  ('" + idConteudo + "', '" + selectedVideo + "')", conn);
             cmd5.ExecuteNonQuery();
             conn.Close();
             conn.Dispose();
-            return idAdicionar;
+            return idConteudo;
         }
     }
 }
