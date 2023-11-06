@@ -22,22 +22,22 @@ namespace ArmandoLeite.Desktop.UI.DAL
 
 
 
-            if (selectedImageData != null)
-            {
-                string selectedImageName = "NomeDaImagem"; // Substitua "NomeDaImagem" pelo nome real da imagem.
+            //if (selectedImageData != null)
+            //{
+            //    string selectedImageName = "NomeDaImagem"; // Substitua "NomeDaImagem" pelo nome real da imagem.
 
-                if (!string.IsNullOrEmpty(selectedImageName))
-                {
+            //    if (!string.IsNullOrEmpty(selectedImageName))
+            //    {
 
-                    // Se uma imagem foi selecionada, salve-a no banco de dados
-                    SaveImageToDatabase(selectedImageData);
-                    MessageBox.Show("Imagem salva no banco de dados com sucesso.");
-                }
-                else
-                {
-                    MessageBox.Show("Nenhuma imagem selecionada. Use o botão 'Selecionar Imagem' primeiro.");
-                }
-            }
+            //        // Se uma imagem foi selecionada, salve-a no banco de dados
+            //        SaveImageToDatabase(selectedImageData);
+            //        MessageBox.Show("Imagem salva no banco de dados com sucesso.");
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("Nenhuma imagem selecionada. Use o botão 'Selecionar Imagem' primeiro.");
+            //    }
+            //}
 
 
 
