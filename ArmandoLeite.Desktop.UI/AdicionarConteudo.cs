@@ -89,7 +89,6 @@ namespace ArmandoLeite.Desktop.UI
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     byte[] selectedImageData;
-
                     string imagePath = openFileDialog.FileName;
                     selectedImageData = File.ReadAllBytes(imagePath); // Armazena a imagem selecionada em uma variável de classe
                 }
@@ -107,7 +106,6 @@ namespace ArmandoLeite.Desktop.UI
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     byte[] selectedImageData;
-
                     string imagePath = openFileDialog.FileName;
                     selectedImageData = File.ReadAllBytes(imagePath);
                  
