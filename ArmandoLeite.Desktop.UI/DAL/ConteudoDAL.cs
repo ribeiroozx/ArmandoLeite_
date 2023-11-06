@@ -12,7 +12,7 @@ namespace ArmandoLeite.Desktop.UI.DAL
     {
         #region Método Adicionar Postagens
 
-        public int Adicionar(string titulo, string texto, string nomeEscritor, string data, string selectedFoto, string selectedPDF, string selectedVideo, string selectedAudio)
+        public int Adicionar(string titulo, string texto, string nomeEscritor, string data, byte selectedFoto, byte selectedPDF, byte selectedVideo, byte selectedAudio)
         {
             SqlConnection conn = new SqlConnection(@"Data Source=FAC0539750W10-1;Initial Catalog=ArmandoLeite;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             conn.Open();
@@ -36,12 +36,13 @@ namespace ArmandoLeite.Desktop.UI.DAL
             //        MessageBox.Show("Nenhuma imagem selecionada. Use o botão 'Selecionar Imagem' primeiro.");
             //    }
             //}
+            
 
             SqlCommand cmd2 = new SqlCommand("insert into audio values  ('" + idConteudo + "','" + selectedAudio + "')", conn);
             cmd2.ExecuteNonQuery();
 
             SqlCommand cmd3 = new SqlCommand("insert into Fotos values  ('" + idConteudo + "', '" + selectedFoto + "')", conn);
-                cmd3.ExecuteNonQuery();
+            cmd3.ExecuteNonQuery();
 
             SqlCommand cmd4 = new SqlCommand("insert into Pdf values  ('" + idConteudo + "', '" + selectedPDF + "')", conn);
             cmd4.ExecuteNonQuery();
