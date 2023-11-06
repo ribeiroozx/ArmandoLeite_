@@ -12,15 +12,13 @@ namespace ArmandoLeite.Desktop.UI.DAL
     {
         #region Método Adicionar Postagens
 
-        public int Adicionar(string titulo, string texto, string nomeEscritor, string data, string selectedFoto, string selectedFotoName, string selectedPDF, string selectedVideo, string selectedAudio)
+        public int Adicionar(string titulo, string texto, string nomeEscritor, string data, string selectedFoto, string selectedPDF, string selectedVideo, string selectedAudio)
         {
             SqlConnection conn = new SqlConnection(@"Data Source=FAC0539750W10-1;Initial Catalog=ArmandoLeite;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             conn.Open();
 
             SqlCommand cmd = new SqlCommand("insert into Conteudo OUTPUT inserted.idConteudo  values  ('" + titulo + "','" + texto + "','" + nomeEscritor + "','" + data + "')", conn);
             int idConteudo = Convert.ToInt32(cmd.ExecuteScalar());
-
-
 
             //if (selectedImageData != null)
             //{
@@ -39,18 +37,6 @@ namespace ArmandoLeite.Desktop.UI.DAL
             //    }
             //}
 
-
-
-
-
-
-
-
-
-
-
-
-
             SqlCommand cmd2 = new SqlCommand("insert into audio values  ('" + idConteudo + "','" + selectedAudio + "')", conn);
             cmd2.ExecuteNonQuery();
 
@@ -63,8 +49,8 @@ namespace ArmandoLeite.Desktop.UI.DAL
             SqlCommand cmd5 = new SqlCommand("insert into Videos values  ('" + idConteudo + "', '" + selectedVideo + "')", conn);
             cmd5.ExecuteNonQuery();
             conn.Close();
-                conn.Dispose();
-                return idConteudo;
+            conn.Dispose();
+            return idConteudo;
         }
     }
 }
