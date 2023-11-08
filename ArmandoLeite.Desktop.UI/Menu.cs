@@ -30,5 +30,10 @@ namespace ArmandoLeite.Desktop.UI
             conteudo.Show();
             this.Hide();
         }
+
+        private void btnVisualizar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
