@@ -42,7 +42,7 @@ namespace ArmandoLeite.Desktop.UI
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
             DAL.ConteudoDAL ad = new DAL.ConteudoDAL();
-            ad.Adicionar(txtTitulo.Text, txtTexto.Text, txtEscritor.Text, date.Text, btnImagem.Text, btnPdf.Text, btnVideo.Text, btnAudio.Text);
+            ad.Adicionar(txtTitulo.Text, txtTexto.Text, txtEscritor.Text, date.Text, , btnPdf.Text, btnVideo.Text, btnAudio.Text);
 
         }
 
