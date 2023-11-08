@@ -17,10 +17,11 @@ namespace ArmandoLeite.Desktop.UI.DAL
             SqlConnection conn = new SqlConnection(@"Data Source=FAC0539750W10-1;Initial Catalog=ArmandoLeite;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             conn.Open();
 
-            SqlCommand cmd = new SqlCommand("insert into Conteudo OUTPUT inserted.idConteudo values  ('" + titulo + "','" + texto + "','" + nomeEscritor + "','" + data + "', '" + selectedFoto + "', '" + selectedPDF + "','" + selectedVideo + "', '" + selectedAudio+ "')select @@identity", conn);
+            SqlCommand cmd = new SqlCommand("insert into Conteudo OUTPUT inserted.idConteudo values  ('" + titulo + "','" + texto + "','" + nomeEscritor + "','" + data +"')", conn);
+            
             int idAdicionar = Convert.ToInt32(cmd.ExecuteScalar());
 
-            SqlCommand cmd2 = new SqlCommand("insert into Audio values  ('" + idAdicionar + "','" + selectedAudio + "')", conn);
+            SqlCommand cmd2 = new SqlCommand("insert into Audio values  ('" + idAdicionar + "','asdasd', '" + selectedAudio + "','GETDATE()')", conn);
             cmd2.ExecuteNonQuery();
 
             SqlCommand cmd3 = new SqlCommand("insert into Fotos values  ('" + idAdicionar + "', '" + selectedFoto + "')", conn);

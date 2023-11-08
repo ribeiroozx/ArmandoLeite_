@@ -52,11 +52,11 @@
             this.label6 = new System.Windows.Forms.Label();
             this.btnImagem = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.btnVideo = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.btnPdf = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.btnAudio = new System.Windows.Forms.Button();
+            this.btnVideo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -228,7 +228,7 @@
             this.btnImagem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnImagem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnImagem.Image = ((System.Drawing.Image)(resources.GetObject("btnImagem.Image")));
-            this.btnImagem.Location = new System.Drawing.Point(693, 86);
+            this.btnImagem.Location = new System.Drawing.Point(693, 88);
             this.btnImagem.Name = "btnImagem";
             this.btnImagem.Size = new System.Drawing.Size(53, 41);
             this.btnImagem.TabIndex = 31;
@@ -243,21 +243,6 @@
             this.label7.Size = new System.Drawing.Size(62, 30);
             this.label7.TabIndex = 35;
             this.label7.Text = "Selecione \r\nUm Vídeo:\r\n";
-            // 
-            // btnVideo
-            // 
-            this.btnVideo.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnVideo.FlatAppearance.BorderSize = 0;
-            this.btnVideo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnVideo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnVideo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVideo.Image = ((System.Drawing.Image)(resources.GetObject("btnVideo.Image")));
-            this.btnVideo.Location = new System.Drawing.Point(693, 194);
-            this.btnVideo.Name = "btnVideo";
-            this.btnVideo.Size = new System.Drawing.Size(53, 41);
-            this.btnVideo.TabIndex = 34;
-            this.btnVideo.UseVisualStyleBackColor = true;
-            this.btnVideo.Click += new System.EventHandler(this.button1_Click);
             // 
             // label8
             // 
@@ -307,18 +292,33 @@
             this.btnAudio.UseVisualStyleBackColor = true;
             this.btnAudio.Click += new System.EventHandler(this.btnAudio_Click);
             // 
+            // btnVideo
+            // 
+            this.btnVideo.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnVideo.FlatAppearance.BorderSize = 0;
+            this.btnVideo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnVideo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnVideo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVideo.Image = ((System.Drawing.Image)(resources.GetObject("btnVideo.Image")));
+            this.btnVideo.Location = new System.Drawing.Point(698, 194);
+            this.btnVideo.Name = "btnVideo";
+            this.btnVideo.Size = new System.Drawing.Size(53, 41);
+            this.btnVideo.TabIndex = 42;
+            this.btnVideo.UseVisualStyleBackColor = true;
+            this.btnVideo.Click += new System.EventHandler(this.btnVideo_Click);
+            // 
             // AdicionarConteudo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(929, 535);
+            this.Controls.Add(this.btnVideo);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.btnAudio);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnPdf);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.btnVideo);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnImagem);
             this.Controls.Add(this.btnAdicionar);
@@ -353,10 +353,10 @@
         private Label label6;
         private Button btnImagem;
         private Label label7;
-        private Button btnVideo;
         private Label label8;
         private Button btnPdf;
         private Label label9;
         private Button btnAudio;
+        private Button btnVideo;
     }
 }
