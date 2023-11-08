@@ -41,7 +41,7 @@ namespace ArmandoLeite.Desktop.UI
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             {
-                openFileDialog.Title = "Selecionar Imagem";
+                openFileDialog.Title = "Selecionar Video";
                 openFileDialog.Filter = "Arquivos de Video|*.mp4;*.mkv;*.avi;*.MOV;*.FLV|Todos os Arquivos|*.*";
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
@@ -57,7 +57,7 @@ namespace ArmandoLeite.Desktop.UI
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
             DAL.ConteudoDAL ad = new DAL.ConteudoDAL();
-            ad.Adicionar(txtTitulo.Text, txtTexto.Text, txtEscritor.Text, date.Text,btnImagem.Text,btnVideo.Text,btnPdf.Text,btnAudio.Text);
+            ad.Adicionar(txtTitulo.Text, txtTexto.Text, txtEscritor.Text, date.Text,btnImagem.,btnVideo.Text,btnPdf.Text,btnAudio.Text);
 
         }
 
@@ -83,7 +83,7 @@ namespace ArmandoLeite.Desktop.UI
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             {
-                openFileDialog.Title = "Selecionar Imagem";
+                openFileDialog.Title = "Selecionar Pdf";
                 openFileDialog.Filter = "Arquivos de Pdf|*.pdf|Todos os Arquivos|*.*";
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
@@ -100,7 +100,7 @@ namespace ArmandoLeite.Desktop.UI
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             {
-                openFileDialog.Title = "Selecionar Imagem";
+                openFileDialog.Title = "Selecionar Audio";
                 openFileDialog.Filter = "Arquivos de audio|*.mp3;*.ogg;*.wma;*.wav|Todos os Arquivos|*.*";
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
