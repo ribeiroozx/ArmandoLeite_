@@ -26,7 +26,7 @@ namespace ArmandoLeite.Desktop.UI.DAL
         //public byte[] selectedAudio { get; set; }
         //public string caminhoAudio { get; set; }
 
-
+        //Adicionar 
         public void Salvarfoto(ConteudoDAL conteudoDAL)
         {
             byte[] Foto = GetFoto(conteudoDAL.CaminhoFoto);
@@ -51,7 +51,6 @@ namespace ArmandoLeite.Desktop.UI.DAL
                     cmd.ExecuteNonQuery();
                 }
             }
-
         }
         private byte[] GetFoto(string caminhoFoto)
         {
@@ -64,6 +63,34 @@ namespace ArmandoLeite.Desktop.UI.DAL
                 }
             }
             return foto;
+        }
+
+        public int idConteudo { get; set; }
+        public string Titulo { get; set; }
+        public string Texto { get; set; }
+        public string NomeEscritor { get; set; }
+        public string dataTime { get; set; }
+        public byte[] foto { get; set; }
+
+
+        //Selecionar
+        public void Selecionarfoto(string idConteudo)
+        {
+            SqlConnection conn = new SqlConnection(@"Data Source=FAC0539750W10-1;Initial Catalog=ArmandoLeite;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("select *from Conteudo where idConteudo='" + idConteudo + "'", conn);
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            if (dr.Read())
+            {
+                ConteudoDAL conteudoDAL = new ConteudoDAL();
+                conteudoDAL.idConteudo = (int)dr["idConteudo"];
+                conteudoDAL.Titulo = dr["Titulo"].ToString();
+                conteudoDAL.Texto = dr["Texto"].ToString();
+                conteudoDAL.NomeEscritor = dr["NomeEscritor"].ToString();
+                conteudoDAL.dataTime = dr["data"].ToString();
+                conteudoDAL.foto = (byte[])dr["foto"];
+            }
         }
     }
 }

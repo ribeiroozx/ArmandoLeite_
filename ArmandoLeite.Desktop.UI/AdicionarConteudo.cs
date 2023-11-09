@@ -54,8 +54,11 @@ namespace ArmandoLeite.Desktop.UI
             conteudoDal.texto = txtTexto.Text;
             conteudoDal.nomeEscritor = txtEscritor.Text;
             conteudoDal.data = date.Text;
-            conteudoDal.CaminhoFoto = caminhoFoto;
-            conteudoDal.Salvarfoto(conteudoDal);
+       
+            
+
+            
+
         }
 
 
@@ -65,23 +68,19 @@ namespace ArmandoLeite.Desktop.UI
             {
                 openFileDialog.Title = "Selecionar Imagem";
                 openFileDialog.Filter = "Arquivos de Imagem|*.jpg;*.jpeg;*.png;*.gif;*.bmp|Todos os Arquivos|*.*";
-                openFileDialog.Multiselect = false;
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    caminhoFoto = openFileDialog.FileName;
+                    byte[] selectedImageData;
 
-                    if (caminhoFoto != "")
-                    {
-                        guna2PictureBox1.Load(caminhoFoto);
-                    }
+                    string imagePath = openFileDialog.FileName;
+                    selectedImageData = File.ReadAllBytes(imagePath); // Armazena a imagem selecionada em uma variável de classe
                 }
             }
         }
-           
 
-         private void btnPdf_Click(object sender, EventArgs e)
-            {
+        private void btnPdf_Click(object sender, EventArgs e)
+        {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             {
                 openFileDialog.Title = "Selecionar Pdf";

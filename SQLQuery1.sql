@@ -80,3 +80,9 @@ CREATE TABLE Conteudo
     NomeEscritor VARCHAR (100) NOT NULL,
     data         varchar(max)  NOT NULL,
 );
+
+CREATE TABLE Imagens (
+    IdImagem INT PRIMARY KEY IDENTITY,
+    NomeArquivo NVARCHAR(50) NOT NULL,
+    DadosImagem VARBINARY(MAX) NOT NULL
+);
