@@ -74,12 +74,13 @@ namespace ArmandoLeite.Desktop.UI.DAL
 
 
         //Selecionar
-        public void Selecionarfoto(string idConteudo)
+        public List<ConteudoDAL> Selecionarfoto()
         {
             SqlConnection conn = new SqlConnection(@"Data Source=FAC0539750W10-1;Initial Catalog=ArmandoLeite;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             conn.Open();
             SqlCommand cmd = new SqlCommand("select *from Conteudo where idConteudo='" + idConteudo + "'", conn);
             SqlDataReader dr = cmd.ExecuteReader();
+            List<ConteudoDAL> usuarioDals = new List<ConteudoDAL>();
 
             if (dr.Read())
             {
@@ -91,6 +92,7 @@ namespace ArmandoLeite.Desktop.UI.DAL
                 conteudoDAL.dataTime = dr["data"].ToString();
                 conteudoDAL.foto = (byte[])dr["foto"];
             }
+            return usuarioDals;
         }
     }
 }
