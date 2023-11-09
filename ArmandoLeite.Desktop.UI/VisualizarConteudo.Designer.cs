@@ -275,6 +275,7 @@
             this.picturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picturebox.TabIndex = 50;
             this.picturebox.TabStop = false;
+            this.picturebox.Click += new System.EventHandler(this.picturebox_Click);
             // 
             // date
             // 

@@ -46,5 +46,10 @@ namespace ArmandoLeite.Desktop.UI
         {
             
         }
+
+        private void picturebox_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
