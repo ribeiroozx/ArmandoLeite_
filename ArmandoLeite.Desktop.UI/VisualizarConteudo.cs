@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace ArmandoLeite.Desktop.UI
 {
     public partial class VisualizarConteudo : Form
-    {
+    { 
         public VisualizarConteudo()
         {
             InitializeComponent();
@@ -44,8 +44,7 @@ namespace ArmandoLeite.Desktop.UI
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            DAL.ConteudoDAL buscar = new DAL.ConteudoDAL();
-            buscar.Selecionarfoto(txtid.Text);
+            
         }
     }
 }
