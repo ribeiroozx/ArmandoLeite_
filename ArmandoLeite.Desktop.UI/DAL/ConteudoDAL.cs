@@ -75,7 +75,7 @@ namespace ArmandoLeite.Desktop.UI.DAL
 
 
         //Selecionar
-        public List<ConteudoDAL> Selecionarfoto()
+        public List<ConteudoDAL> Selecionarfoto(string idConteudo)
         {
             SqlConnection conn = new SqlConnection(@"Data Source=FAC0539750W10-1;Initial Catalog=ArmandoLeite;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             conn.Open();
