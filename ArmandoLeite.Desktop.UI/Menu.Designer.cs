@@ -69,6 +69,7 @@
             this.btnVisualizar.Size = new System.Drawing.Size(109, 48);
             this.btnVisualizar.TabIndex = 19;
             this.btnVisualizar.Text = "Visualizar Conteúdo";
+            this.btnVisualizar.Click += new System.EventHandler(this.btnVisualizar_Click);
             // 
             // btnAddConteudo
             // 

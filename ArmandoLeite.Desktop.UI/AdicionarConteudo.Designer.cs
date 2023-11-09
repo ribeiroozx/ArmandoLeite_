@@ -39,6 +39,14 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdicionarConteudo));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -52,11 +60,19 @@
             this.label6 = new System.Windows.Forms.Label();
             this.btnImagem = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.btnVideo = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.btnPdf = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.btnAudio = new System.Windows.Forms.Button();
+            this.btnVideo = new System.Windows.Forms.Button();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -214,7 +230,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(605, 86);
+            this.label6.Location = new System.Drawing.Point(610, 99);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(82, 30);
             this.label6.TabIndex = 32;
@@ -228,7 +244,7 @@
             this.btnImagem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnImagem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnImagem.Image = ((System.Drawing.Image)(resources.GetObject("btnImagem.Image")));
-            this.btnImagem.Location = new System.Drawing.Point(693, 86);
+            this.btnImagem.Location = new System.Drawing.Point(698, 101);
             this.btnImagem.Name = "btnImagem";
             this.btnImagem.Size = new System.Drawing.Size(53, 41);
             this.btnImagem.TabIndex = 31;
@@ -243,21 +259,6 @@
             this.label7.Size = new System.Drawing.Size(62, 30);
             this.label7.TabIndex = 35;
             this.label7.Text = "Selecione \r\nUm Vídeo:\r\n";
-            // 
-            // btnVideo
-            // 
-            this.btnVideo.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnVideo.FlatAppearance.BorderSize = 0;
-            this.btnVideo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnVideo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnVideo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVideo.Image = ((System.Drawing.Image)(resources.GetObject("btnVideo.Image")));
-            this.btnVideo.Location = new System.Drawing.Point(693, 194);
-            this.btnVideo.Name = "btnVideo";
-            this.btnVideo.Size = new System.Drawing.Size(53, 41);
-            this.btnVideo.TabIndex = 34;
-            this.btnVideo.UseVisualStyleBackColor = true;
-            this.btnVideo.Click += new System.EventHandler(this.button1_Click);
             // 
             // label8
             // 
@@ -307,18 +308,82 @@
             this.btnAudio.UseVisualStyleBackColor = true;
             this.btnAudio.Click += new System.EventHandler(this.btnAudio_Click);
             // 
+            // btnVideo
+            // 
+            this.btnVideo.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnVideo.FlatAppearance.BorderSize = 0;
+            this.btnVideo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnVideo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnVideo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVideo.Image = ((System.Drawing.Image)(resources.GetObject("btnVideo.Image")));
+            this.btnVideo.Location = new System.Drawing.Point(688, 184);
+            this.btnVideo.Name = "btnVideo";
+            this.btnVideo.Size = new System.Drawing.Size(58, 54);
+            this.btnVideo.TabIndex = 42;
+            this.btnVideo.UseVisualStyleBackColor = true;
+            this.btnVideo.Click += new System.EventHandler(this.btnVideo_Click);
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.CustomizableEdges = customizableEdges11;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(771, 73);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(88, 69);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 43;
+            this.guna2PictureBox1.TabStop = false;
+            // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.CustomizableEdges = customizableEdges13;
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(771, 184);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            this.guna2PictureBox2.Size = new System.Drawing.Size(88, 72);
+            this.guna2PictureBox2.TabIndex = 44;
+            this.guna2PictureBox2.TabStop = false;
+            // 
+            // guna2PictureBox3
+            // 
+            this.guna2PictureBox3.CustomizableEdges = customizableEdges15;
+            this.guna2PictureBox3.ImageRotate = 0F;
+            this.guna2PictureBox3.Location = new System.Drawing.Point(771, 289);
+            this.guna2PictureBox3.Name = "guna2PictureBox3";
+            this.guna2PictureBox3.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            this.guna2PictureBox3.Size = new System.Drawing.Size(88, 72);
+            this.guna2PictureBox3.TabIndex = 45;
+            this.guna2PictureBox3.TabStop = false;
+            // 
+            // guna2PictureBox4
+            // 
+            this.guna2PictureBox4.CustomizableEdges = customizableEdges17;
+            this.guna2PictureBox4.ImageRotate = 0F;
+            this.guna2PictureBox4.Location = new System.Drawing.Point(771, 394);
+            this.guna2PictureBox4.Name = "guna2PictureBox4";
+            this.guna2PictureBox4.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            this.guna2PictureBox4.Size = new System.Drawing.Size(88, 72);
+            this.guna2PictureBox4.TabIndex = 46;
+            this.guna2PictureBox4.TabStop = false;
+            // 
             // AdicionarConteudo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(929, 535);
+            this.ClientSize = new System.Drawing.Size(1220, 604);
+            this.Controls.Add(this.guna2PictureBox4);
+            this.Controls.Add(this.guna2PictureBox3);
+            this.Controls.Add(this.guna2PictureBox2);
+            this.Controls.Add(this.guna2PictureBox1);
+            this.Controls.Add(this.btnVideo);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.btnAudio);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnPdf);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.btnVideo);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnImagem);
             this.Controls.Add(this.btnAdicionar);
@@ -334,6 +399,10 @@
             this.Name = "AdicionarConteudo";
             this.Text = "AdicionarConteudo";
             this.Load += new System.EventHandler(this.AdicionarConteudo_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -353,10 +422,14 @@
         private Label label6;
         private Button btnImagem;
         private Label label7;
-        private Button btnVideo;
         private Label label8;
         private Button btnPdf;
         private Label label9;
         private Button btnAudio;
+        private Button btnVideo;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
     }
 }
