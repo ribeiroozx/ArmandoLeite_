@@ -44,7 +44,8 @@ namespace ArmandoLeite.Desktop.UI
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            
+            DAL.ConteudoDAL buscar = new DAL.ConteudoDAL();
+            buscar.Selecionarfoto(txtid.Text);
         }
     }
 }

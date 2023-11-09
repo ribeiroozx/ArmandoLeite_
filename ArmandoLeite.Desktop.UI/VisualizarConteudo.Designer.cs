@@ -131,7 +131,6 @@
             this.guna2GroupBox1.ShadowDecoration.CustomizableEdges = customizableEdges20;
             this.guna2GroupBox1.Size = new System.Drawing.Size(892, 470);
             this.guna2GroupBox1.TabIndex = 21;
-            this.guna2GroupBox1.Visible = false;
             // 
             // label9
             // 
