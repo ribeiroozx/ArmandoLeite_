@@ -13,13 +13,12 @@ namespace ArmandoLeite.Desktop.UI
 {
     public partial class AdicionarConteudo : Form
     {
-        private byte[] selectedFoto;
-        private byte[] selectedPDF;
-        private byte[] selectedVideo;
-        private byte[] selectedAudio;
+        
 
-        public string caminhoFoto = "";
-        private DAL.ConteudoDAL conteudoDal = new DAL.ConteudoDAL();
+        private string caminhoFoto = "";
+        public DAL.ConteudoDAL conteudoDal = new DAL.ConteudoDAL();
+
+
 
         public AdicionarConteudo()
         {
@@ -44,7 +43,8 @@ namespace ArmandoLeite.Desktop.UI
 
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
-            SalvarProduto();
+
+           SalvarProduto();
 
         }
 
@@ -54,10 +54,8 @@ namespace ArmandoLeite.Desktop.UI
             conteudoDal.texto = txtTexto.Text;
             conteudoDal.nomeEscritor = txtEscritor.Text;
             conteudoDal.data = date.Text;
-       
-            
-
-            
+            conteudoDal.CaminhoFoto = caminhoFoto;
+            conteudoDal.Salvarfoto(conteudoDal);
 
         }
 
@@ -68,16 +66,21 @@ namespace ArmandoLeite.Desktop.UI
             {
                 openFileDialog.Title = "Selecionar Imagem";
                 openFileDialog.Filter = "Arquivos de Imagem|*.jpg;*.jpeg;*.png;*.gif;*.bmp|Todos os Arquivos|*.*";
+                openFileDialog.Multiselect = false;
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    byte[] selectedImageData;
+                    caminhoFoto = openFileDialog.FileName;
 
-                    string imagePath = openFileDialog.FileName;
-                    selectedImageData = File.ReadAllBytes(imagePath); // Armazena a imagem selecionada em uma variável de classe
+                    if (caminhoFoto != "")
+                    {
+                        guna2PictureBox1.Load(caminhoFoto);
+                    }
                 }
             }
         }
+
+                
 
         private void btnPdf_Click(object sender, EventArgs e)
         {

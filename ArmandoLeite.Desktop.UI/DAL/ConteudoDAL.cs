@@ -65,6 +65,7 @@ namespace ArmandoLeite.Desktop.UI.DAL
             return foto;
         }
 
+
         public int idConteudo { get; set; }
         public string Titulo { get; set; }
         public string Texto { get; set; }
@@ -96,100 +97,102 @@ namespace ArmandoLeite.Desktop.UI.DAL
         }
     }
 }
+//    }
+//}
 
 
 
-            //SqlCommand cmd2 = new SqlCommand("insert into Audio values  ('" + idSalvarfoto + "','asdasd', '" + selectedAudio + "','GETDATE()')", conn);
-            //cmd2.ExecuteNonQuery();
+//SqlCommand cmd2 = new SqlCommand("insert into Audio values  ('" + idSalvarfoto + "','asdasd', '" + selectedAudio + "','GETDATE()')", conn);
+//cmd2.ExecuteNonQuery();
 
-            //SqlCommand cmd3 = new SqlCommand("insert into Fotos values  ('" + idSalvarfoto + "', '" + selectedFoto + "')", conn);
-            //cmd3.ExecuteNonQuery();
+//SqlCommand cmd3 = new SqlCommand("insert into Fotos values  ('" + idSalvarfoto + "', '" + selectedFoto + "')", conn);
+//cmd3.ExecuteNonQuery();
 
-            //SqlCommand cmd4 = new SqlCommand("insert into Pdf values  ('" + idSalvarfoto + "', '" + selectedPDF + "')", conn);
-            //cmd4.ExecuteNonQuery();
+//SqlCommand cmd4 = new SqlCommand("insert into Pdf values  ('" + idSalvarfoto + "', '" + selectedPDF + "')", conn);
+//cmd4.ExecuteNonQuery();
 
-            //SqlCommand cmd5 = new SqlCommand("insert into Videos values  ('" + idSalvarfoto + "', '" + selectedVideo + "')", conn);
-            //cmd5.ExecuteNonQuery();
-            //conn.Close();
-            //conn.Dispose();
-            //return idSalvarfoto;
-
-
-        //private byte[] GetFoto(string caminhoFoto)
-        //{
-        //    byte[] foto;
-        //    using (var stream = new FileStream(caminhoFoto, FileMode.Open, FileAccess.Read))
-        //    {
-        //        using (var reader = new BinaryReader(stream))
-        //        {
-        //            foto = reader.ReadBytes((int)stream.Length);
-        //        }
-        //    }
-        //    return foto;
-        //}
-               
-        //public int Adicionar(string titulo, string texto, string nomeEscritor, string data, byte[] selectedFoto, byte[] selectedPDF, byte[] selectedVideo, byte[] selectedAudio)
-        //{
-
-        //    SqlConnection conn = new SqlConnection(@"Data Source=FAC0539750W10-1;Initial Catalog=ArmandoLeite;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
-        //    conn.Open();
-
-        //    SqlCommand cmd = new SqlCommand("insert into Conteudo OUTPUT inserted.idConteudo values  ('" + titulo + "','" + texto + "','" + nomeEscritor + "','" + data +"')", conn);
-            
-        //    int idAdicionar = Convert.ToInt32(cmd.ExecuteScalar());
-
-        //    SqlCommand cmd2 = new SqlCommand("insert into Audio values  ('" + idAdicionar + "','asdasd', '" + selectedAudio + "','GETDATE()')", conn);
-        //    cmd2.ExecuteNonQuery();
-
-        //    SqlCommand cmd3 = new SqlCommand("insert into Fotos values  ('" + idAdicionar + "', '" + selectedFoto + "')", conn);
-        //    cmd3.ExecuteNonQuery();
-
-        //    SqlCommand cmd4 = new SqlCommand("insert into Pdf values  ('" + idAdicionar + "', '" + selectedPDF + "')", conn);
-        //    cmd4.ExecuteNonQuery();
-
-        //    SqlCommand cmd5 = new SqlCommand("insert into Videos values  ('" + idAdicionar + "', '" + selectedVideo + "')", conn);
-        //    cmd5.ExecuteNonQuery();
-        //    conn.Close();
-        //    conn.Dispose();
-        //    return idAdicionar;
-        //}
-
-            #endregion
-
-            //    #region Método Deletar Postagens
-
-            //    public void Deletar(string titulo, string texto, string nomeEscritor, string data)
-            //    {
-            //        SqlConnection conn = new SqlConnection(@"Data Source=FAC0539750W10-1;User ID=sa;Password=********;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
-            //        conn.Open();
-
-            //        SqlCommand cmd = new SqlCommand("insert into Adicionar values ('" + titulo + "','" + texto + "','" + nomeEscritor + "','" + data + "')", conn);
-            //        cmd.ExecuteNonQuery();
-            //    }
-            //    #endregion
-
-            //    #region Método Buscar Postagens
-
-            //    public void Buscar(string titulo, string texto, string nomeEscritor, string data)
-            //    {
-            //        SqlConnection conn = new SqlConnection(@"Data Source=FAC0539750W10-1;User ID=sa;Password=********;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
-            //        conn.Open();
-
-            //        SqlCommand cmd = new SqlCommand("insert into Adicionar values ('" + titulo + "','" + texto + "','" + nomeEscritor + "','" + data + "')", conn);
-            //        cmd.ExecuteNonQuery();
-            //    }
-            //    #endregion
+//SqlCommand cmd5 = new SqlCommand("insert into Videos values  ('" + idSalvarfoto + "', '" + selectedVideo + "')", conn);
+//cmd5.ExecuteNonQuery();
+//conn.Close();
+//conn.Dispose();
+//return idSalvarfoto;
 
 
-            //    #region Método Atualizar Postagens
+//private byte[] GetFoto(string caminhoFoto)
+//{
+//    byte[] foto;
+//    using (var stream = new FileStream(caminhoFoto, FileMode.Open, FileAccess.Read))
+//    {
+//        using (var reader = new BinaryReader(stream))
+//        {
+//            foto = reader.ReadBytes((int)stream.Length);
+//        }
+//    }
+//    return foto;
+//}
 
-            //    public void Atualizar(string titulo, string texto, string nomeEscritor, string data)
-            //    {
-            //        SqlConnection conn = new SqlConnection(@"Data Source=FAC0539750W10-1;User ID=sa;Password=********;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
-            //        conn.Open();
+//public int Adicionar(string titulo, string texto, string nomeEscritor, string data, byte[] selectedFoto, byte[] selectedPDF, byte[] selectedVideo, byte[] selectedAudio)
+//{
 
-            //        SqlCommand cmd = new SqlCommand("insert into Adicionar values ('" + titulo + "','" + texto + "','" + nomeEscritor + "','" + data + "')", conn);
-            //        cmd.ExecuteNonQuery();
-            //    }
-            //    #endregion
-            //}
+//    SqlConnection conn = new SqlConnection(@"Data Source=FAC0539750W10-1;Initial Catalog=ArmandoLeite;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+//    conn.Open();
+
+//    SqlCommand cmd = new SqlCommand("insert into Conteudo OUTPUT inserted.idConteudo values  ('" + titulo + "','" + texto + "','" + nomeEscritor + "','" + data +"')", conn);
+
+//    int idAdicionar = Convert.ToInt32(cmd.ExecuteScalar());
+
+//    SqlCommand cmd2 = new SqlCommand("insert into Audio values  ('" + idAdicionar + "','asdasd', '" + selectedAudio + "','GETDATE()')", conn);
+//    cmd2.ExecuteNonQuery();
+
+//    SqlCommand cmd3 = new SqlCommand("insert into Fotos values  ('" + idAdicionar + "', '" + selectedFoto + "')", conn);
+//    cmd3.ExecuteNonQuery();
+
+//    SqlCommand cmd4 = new SqlCommand("insert into Pdf values  ('" + idAdicionar + "', '" + selectedPDF + "')", conn);
+//    cmd4.ExecuteNonQuery();
+
+//    SqlCommand cmd5 = new SqlCommand("insert into Videos values  ('" + idAdicionar + "', '" + selectedVideo + "')", conn);
+//    cmd5.ExecuteNonQuery();
+//    conn.Close();
+//    conn.Dispose();
+//    return idAdicionar;
+//}
+
+#endregion
+
+//    #region Método Deletar Postagens
+
+//    public void Deletar(string titulo, string texto, string nomeEscritor, string data)
+//    {
+//        SqlConnection conn = new SqlConnection(@"Data Source=FAC0539750W10-1;User ID=sa;Password=********;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+//        conn.Open();
+
+//        SqlCommand cmd = new SqlCommand("insert into Adicionar values ('" + titulo + "','" + texto + "','" + nomeEscritor + "','" + data + "')", conn);
+//        cmd.ExecuteNonQuery();
+//    }
+//    #endregion
+
+//    #region Método Buscar Postagens
+
+//    public void Buscar(string titulo, string texto, string nomeEscritor, string data)
+//    {
+//        SqlConnection conn = new SqlConnection(@"Data Source=FAC0539750W10-1;User ID=sa;Password=********;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+//        conn.Open();
+
+//        SqlCommand cmd = new SqlCommand("insert into Adicionar values ('" + titulo + "','" + texto + "','" + nomeEscritor + "','" + data + "')", conn);
+//        cmd.ExecuteNonQuery();
+//    }
+//    #endregion
+
+
+//    #region Método Atualizar Postagens
+
+//    public void Atualizar(string titulo, string texto, string nomeEscritor, string data)
+//    {
+//        SqlConnection conn = new SqlConnection(@"Data Source=FAC0539750W10-1;User ID=sa;Password=********;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+//        conn.Open();
+
+//        SqlCommand cmd = new SqlCommand("insert into Adicionar values ('" + titulo + "','" + texto + "','" + nomeEscritor + "','" + data + "')", conn);
+//        cmd.ExecuteNonQuery();
+//    }
+//    #endregion
+//}
