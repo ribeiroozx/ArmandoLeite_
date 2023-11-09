@@ -37,7 +37,7 @@ namespace ArmandoLeite.Desktop.UI.DAL
             
             int idSalvarfoto = Convert.ToInt32(cmd.ExecuteScalar());
 
-            SqlCommand cmd2 = new SqlCommand("insert into Audio values  ('" + idSalvarfoto + "','asdasd', '" + selectedAudio + "','GETDATE()')", conn);
+            SqlCommand cmd2 = new SqlCommand("insert into Fotos values  ('" + idSalvarfoto + "','asdasd', '" + selectedAudio + "','GETDATE()')", conn);
             cmd2.ExecuteNonQuery();
 
             //SqlCommand cmd3 = new SqlCommand("insert into Fotos values  ('" + idSalvarfoto + "', '" + selectedFoto + "')", conn);
