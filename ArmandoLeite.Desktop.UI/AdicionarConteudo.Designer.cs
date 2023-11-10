@@ -325,7 +325,10 @@
             // 
             // guna2PictureBox1
             // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.SkyBlue;
+            this.guna2PictureBox1.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.guna2PictureBox1.CustomizableEdges = customizableEdges11;
+            this.guna2PictureBox1.FillColor = System.Drawing.Color.SkyBlue;
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(771, 73);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
@@ -338,6 +341,7 @@
             // guna2PictureBox2
             // 
             this.guna2PictureBox2.CustomizableEdges = customizableEdges13;
+            this.guna2PictureBox2.FillColor = System.Drawing.Color.SkyBlue;
             this.guna2PictureBox2.ImageRotate = 0F;
             this.guna2PictureBox2.Location = new System.Drawing.Point(771, 184);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
@@ -349,6 +353,7 @@
             // guna2PictureBox3
             // 
             this.guna2PictureBox3.CustomizableEdges = customizableEdges15;
+            this.guna2PictureBox3.FillColor = System.Drawing.Color.SkyBlue;
             this.guna2PictureBox3.ImageRotate = 0F;
             this.guna2PictureBox3.Location = new System.Drawing.Point(771, 289);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
@@ -360,6 +365,7 @@
             // guna2PictureBox4
             // 
             this.guna2PictureBox4.CustomizableEdges = customizableEdges17;
+            this.guna2PictureBox4.FillColor = System.Drawing.Color.SkyBlue;
             this.guna2PictureBox4.ImageRotate = 0F;
             this.guna2PictureBox4.Location = new System.Drawing.Point(771, 394);
             this.guna2PictureBox4.Name = "guna2PictureBox4";
