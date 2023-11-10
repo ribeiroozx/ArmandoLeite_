@@ -330,7 +330,7 @@
             this.guna2PictureBox1.Location = new System.Drawing.Point(771, 73);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(88, 69);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(171, 92);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 43;
             this.guna2PictureBox1.TabStop = false;
