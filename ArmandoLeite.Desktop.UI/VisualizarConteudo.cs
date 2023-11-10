@@ -26,6 +26,9 @@ namespace ArmandoLeite.Desktop.UI.DAL
             DAL.ConteudoDAL conteudoDAL = new DAL.ConteudoDAL();
             guna2DataGridView1.DataSource = conteudoDAL.Selecionarfoto(txtid.Text);
             //guna2DataGridView1.DataBind();
+            DataGridViewImageColumn fotoColumn = (DataGridViewImageColumn)guna2DataGridView1.Columns["foto"];
+            fotoColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
+            guna2DataGridView1.Refresh();
         }
 
 
