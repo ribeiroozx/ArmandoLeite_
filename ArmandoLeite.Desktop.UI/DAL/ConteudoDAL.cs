@@ -83,38 +83,6 @@ namespace ArmandoLeite.Desktop.UI.DAL
             SqlDataReader dr = cmd.ExecuteReader();
             List<ConteudoDAL> usuarioDals = new List<ConteudoDAL>();
 
-            //DataGridViewImageColumn imageColumn = new DataGridViewImageColumn();
-            //imageColumn.HeaderText = "Imagem";
-            //imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom; // Ajuste conforme necessário
-            //imageColumn.Width = 100; // Ajuste conforme necessário
-            //dataGridView1.Columns.Add(imageColumn);
-
-
-
-            //foreach (DataGridViewRow row in dataGridView1.Rows)
-            //{
-            //    byte[] imageData = (byte[])row.Cells["NomeDoCampoBinario"].Value;
-            //    Image image = ByteArrayToImage(imageData);
-            //    row.Cells["Imagem"].Value = image;
-            //}
-
-            //// Método para converter byte array em Image
-            //private Image ByteArrayToImage(byte[] byteArray)
-            //{
-            //    using (MemoryStream ms = new MemoryStream(byteArray))
-            //    {
-            //        return Image.FromStream(ms);
-            //    }
-            //}
-
-            //DataGridViewImageColumn imageColumn = new DataGridViewImageColumn();
-            //imageColumn.HeaderText = "Imagem";
-            //imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom; // Ajuste conforme necessário
-            //imageColumn.Width = 100; // Ajuste conforme necessário
-            //dataGridView1.Columns.Add(imageColumn);
-
-
-
 
             while (dr.Read())
             {
