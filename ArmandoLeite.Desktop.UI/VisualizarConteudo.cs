@@ -8,9 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ArmandoLeite.Desktop.UI
+namespace ArmandoLeite.Desktop.UI.DAL
 {
-    public partial class VisualizarConteudo : Form
+        private void CarregarGrid()
+        {
+            ConteudoDAL conteudoDAL = new ConteudoDAL();
+            guna2DataGridView1.DataSource = conteudoDAL.SelecionarConteudos();
+            guna2DataGridView1.DataBind();
+        }
+    
+
+public partial class VisualizarConteudo : Form
     {
         private string caminhoFoto = "";
         public DAL.ConteudoDAL conteudoDAL = new DAL.ConteudoDAL();
