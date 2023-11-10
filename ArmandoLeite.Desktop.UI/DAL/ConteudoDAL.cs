@@ -83,20 +83,85 @@ namespace ArmandoLeite.Desktop.UI.DAL
             SqlDataReader dr = cmd.ExecuteReader();
             List<ConteudoDAL> usuarioDals = new List<ConteudoDAL>();
 
-            if (dr.Read())
+            //DataGridViewImageColumn imageColumn = new DataGridViewImageColumn();
+            //imageColumn.HeaderText = "Imagem";
+            //imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom; // Ajuste conforme necessário
+            //imageColumn.Width = 100; // Ajuste conforme necessário
+            //dataGridView1.Columns.Add(imageColumn);
+
+
+
+            //foreach (DataGridViewRow row in dataGridView1.Rows)
+            //{
+            //    byte[] imageData = (byte[])row.Cells["NomeDoCampoBinario"].Value;
+            //    Image image = ByteArrayToImage(imageData);
+            //    row.Cells["Imagem"].Value = image;
+            //}
+
+            //// Método para converter byte array em Image
+            //private Image ByteArrayToImage(byte[] byteArray)
+            //{
+            //    using (MemoryStream ms = new MemoryStream(byteArray))
+            //    {
+            //        return Image.FromStream(ms);
+            //    }
+            //}
+
+            //DataGridViewImageColumn imageColumn = new DataGridViewImageColumn();
+            //imageColumn.HeaderText = "Imagem";
+            //imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom; // Ajuste conforme necessário
+            //imageColumn.Width = 100; // Ajuste conforme necessário
+            //dataGridView1.Columns.Add(imageColumn);
+
+
+
+
+            while (dr.Read())
             {
-                ConteudoDAL conteudoDAL = new ConteudoDAL();
-                conteudoDAL.idConteudo = (int)dr["idConteudo"];
-                conteudoDAL.Titulo = dr["Titulo"].ToString();
-                conteudoDAL.Texto = dr["Texto"].ToString();
-                conteudoDAL.NomeEscritor = dr["NomeEscritor"].ToString();
-                conteudoDAL.dataTime = dr["data"].ToString();
-                conteudoDAL.foto = (byte[])dr["foto"];
+                ConteudoDAL conteudo = new ConteudoDAL();
+                conteudo.idConteudo = dr.GetInt32(dr.GetOrdinal("idConteudo"));
+                conteudo.Titulo = dr.GetString(dr.GetOrdinal("Titulo"));
+                conteudo.Texto = dr.GetString(dr.GetOrdinal("Texto"));
+                conteudo.NomeEscritor = dr.GetString(dr.GetOrdinal("NomeEscritor"));
+                conteudo.dataTime = dr.GetString(dr.GetOrdinal("data"));
+
+                if (dr["foto"] != DBNull.Value)
+                {
+                    conteudo.foto = (byte[])dr["foto"];
+
+                }
+
+                usuarioDals.Add(conteudo);
             }
+            dr.Close();
             return usuarioDals;
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+//            if (dr.Read())
+//            {
+//                ConteudoDAL conteudoDAL = new ConteudoDAL();
+//                conteudoDAL.idConteudo = (int)dr["idConteudo"];
+//                conteudoDAL.Titulo = dr["Titulo"].ToString();
+//                conteudoDAL.Texto = dr["Texto"].ToString();
+//                conteudoDAL.NomeEscritor = dr["NomeEscritor"].ToString();
+//                conteudoDAL.dataTime = dr["data"].ToString();
+//                conteudoDAL.foto = (byte[])dr["foto"];
+//            }
+//            return usuarioDals;
+//        }
+//    }
+//}
 //    }
 //}
 
