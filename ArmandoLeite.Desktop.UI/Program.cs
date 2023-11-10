@@ -1,4 +1,4 @@
-namespace ArmandoLeite.Desktop.UI
+namespace ArmandoLeite.Desktop.UI.DAL
 {
     internal static class Program
     {

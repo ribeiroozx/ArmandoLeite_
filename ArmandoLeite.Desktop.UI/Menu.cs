@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ArmandoLeite.Desktop.UI
+namespace ArmandoLeite.Desktop.UI.DAL
 {
     public partial class Menu : Form
     {

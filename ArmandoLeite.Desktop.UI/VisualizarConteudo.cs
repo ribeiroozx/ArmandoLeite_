@@ -10,23 +10,24 @@ using System.Windows.Forms;
 
 namespace ArmandoLeite.Desktop.UI.DAL
 {
-        private void CarregarGrid()
-        {
-            ConteudoDAL conteudoDAL = new ConteudoDAL();
-            guna2DataGridView1.DataSource = conteudoDAL.SelecionarConteudos();
-            guna2DataGridView1.DataBind();
-        }
-    
 
-public partial class VisualizarConteudo : Form
+    public partial class VisualizarConteudo : Form
     {
-        private string caminhoFoto = "";
-        public DAL.ConteudoDAL conteudoDAL = new DAL.ConteudoDAL();
-        
+        //private string caminhoFoto = "";
+        //public DAL.ConteudoDAL conteudoDAL = new DAL.ConteudoDAL();
+
         public VisualizarConteudo()
         {
             InitializeComponent();
         }
+
+        public void CarregarGrid()
+        {
+            DAL.ConteudoDAL conteudoDAL = new DAL.ConteudoDAL();
+            guna2DataGridView1.DataSource = conteudoDAL.Selecionarfoto(txtid.Text);
+            //guna2DataGridView1.DataBind();
+        }
+
 
         private void guna2TileButton1_Click(object sender, EventArgs e)
         {
@@ -55,25 +56,24 @@ public partial class VisualizarConteudo : Form
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            DAL.ConteudoDAL busca = new DAL.ConteudoDAL();
-            busca.Selecionarfoto(txtid.Text);
+            CarregarGrid();
+            
 
-            SelecionarFoto();
 
         //{
         //    DAL.ConteudoDAL buscar = new DAL.ConteudoDAL();
         //    List<VisualizarConteudo> buscar1 = buscar.Selecionarfoto(txtTitulo.Text, txtTexto.Text, txtEscritor.Text, date.Text, );
         }
 
-        private void SelecionarFoto()
-        {
-            conteudoDAL.titulo = txtTitulo.Text;
-            conteudoDAL.texto = txtTexto.Text;
-            conteudoDAL.nomeEscritor = txtEscritor.Text;
-            conteudoDAL.data = date.Text;
-            conteudoDAL.CaminhoFoto = caminhoFoto;
-            conteudoDAL.Selecionarfoto();
-        }
+        //private void SelecionarFoto()
+        //{
+        //    conteudoDAL.titulo = txtTitulo.Text;
+        //    conteudoDAL.texto = txtTexto.Text;
+        //    conteudoDAL.nomeEscritor = txtEscritor.Text;
+        //    conteudoDAL.data = date.Text;
+        //    conteudoDAL.CaminhoFoto = caminhoFoto;
+        //    conteudoDAL.Selecionarfoto();
+        //}
 
         private void picturebox_Click(object sender, EventArgs e)
         {
