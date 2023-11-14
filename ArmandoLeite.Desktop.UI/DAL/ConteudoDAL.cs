@@ -17,7 +17,6 @@ namespace ArmandoLeite.Desktop.UI.DAL
         public string nomeEscritor { get; set; }
         public string texto { get; set; }
         public string data { get; set; }
-        public byte[] ByteFoto { get; set; }   
         public string CaminhoFoto { get; set; }
         public byte[] foto { get; set; }
 
@@ -91,7 +90,6 @@ namespace ArmandoLeite.Desktop.UI.DAL
                 if (dr["foto"] != DBNull.Value)
                 {
                     conteudo.foto = (byte[])dr["foto"];
-
                 }
 
                 usuarioDals.Add(conteudo);
@@ -100,6 +98,7 @@ namespace ArmandoLeite.Desktop.UI.DAL
             return usuarioDals;
         }
     }
+    #endregion
 }
 
 
@@ -185,7 +184,7 @@ namespace ArmandoLeite.Desktop.UI.DAL
 //    return idAdicionar;
 //}
 
-#endregion
+//#endregion
 
 //    #region Método Deletar Postagens
 
