@@ -86,6 +86,7 @@
             this.btnLogin.Size = new System.Drawing.Size(109, 48);
             this.btnLogin.TabIndex = 18;
             this.btnLogin.Text = "Entrar";
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // guna2HtmlLabel3
             // 
