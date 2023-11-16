@@ -15,7 +15,6 @@ C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.Desktop.UI\bi
 C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.Desktop.UI\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.Desktop.UI\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Management.dll
 C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.csproj.AssemblyReference.cache
-C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.AdicionarConteudo.resources
 C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.Login.resources
 C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.Properties.Resources.resources
 C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.csproj.GenerateResource.cache
@@ -97,3 +96,4 @@ C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.Desktop.UI\ob
 C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.DAL.Menu.resources
 C:\Users\mauricio.snasciment1\Documents\GitHub\ArmandoLeite_\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.DAL.Menu.resources
 C:\Users\mauricio.snasciment1\Documents\GitHub\ArmandoLeite_\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.DAL.VisualizarConteudo.resources
+C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.DAL.AdicionarConteudo.resources

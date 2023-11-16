@@ -17,23 +17,20 @@ namespace ArmandoLeite.Desktop.UI.DAL
             InitializeComponent();
         }
 
-        private void guna2TileButton1_Click(object sender, EventArgs e)
+
+        private void btnVisualizar_Click(object sender, EventArgs e)
         {
             VisualizarConteudo conteudo = new VisualizarConteudo();
             conteudo.Show();
             this.Hide();
         }
 
-        private void guna2TileButton2_Click(object sender, EventArgs e)
+        private void btnAddConteudo_Click(object sender, EventArgs e)
         {
             AdicionarConteudo conteudo = new AdicionarConteudo();
             conteudo.Show();
             this.Hide();
         }
-
-        private void btnVisualizar_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
+
