@@ -93,6 +93,7 @@
             this.btnAddConteudo.Size = new System.Drawing.Size(109, 48);
             this.btnAddConteudo.TabIndex = 20;
             this.btnAddConteudo.Text = "Adicionar Conteúdo";
+            this.btnAddConteudo.Click += new System.EventHandler(this.btnAddConteudo_Click);
             // 
             // Menu
             // 

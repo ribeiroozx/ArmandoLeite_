@@ -104,6 +104,47 @@ namespace ArmandoLeite.Desktop.UI.DAL
             dr.Close();
             return usuarioDals;
         }
+
+        //Apagar
+        public void Apagarfoto(string idConteudo)
+        {
+            SqlConnection conn = new SqlConnection(@"Data Source=FAC0539750W10-1;Initial Catalog=ArmandoLeite;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            conn.Open();
+
+            SqlCommand cmd = new SqlCommand("delete from Conteudo where idConteudo=" + idConteudo, conn);
+            cmd.ExecuteNonQuery();
+        }
+
+        //Atualizar
+        public void Atualizarfoto(ConteudoDAL conteudoDAL, string titulo, string texto, string nomeEscritor, string data, int idConteudo)
+        {
+            byte[] Foto = GetFoto(conteudoDAL.CaminhoFoto);
+            var sql = "UPDATE Conteudo SET Titulo = @Titulo, Texto = @Texto, NomeEscritor = @NomeEscritor, data = @data, foto = @foto WHERE idConteudo = @idConteudo";
+
+            using (var con = new SqlConnection(@"Data Source=FAC0539750W10-1;Initial Catalog=ArmandoLeite;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"))
+            {
+
+                con.Open();
+                using (var cmd = new SqlCommand(sql, con))
+                {
+
+                    cmd.Parameters.AddWithValue("@Titulo", titulo);
+                    cmd.Parameters.AddWithValue("@Texto", texto);
+                    cmd.Parameters.AddWithValue("@NomeEscritor", nomeEscritor);
+                    cmd.Parameters.AddWithValue("@data", data);
+                    cmd.Parameters.AddWithValue("@idConteudo", idConteudo);
+                    cmd.Parameters.AddWithValue("@foto", Foto);
+
+
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+
+
+
+
+
     }
 }
 
