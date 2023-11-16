@@ -13,8 +13,8 @@ namespace ArmandoLeite.Desktop.UI.DAL
 
     public partial class VisualizarConteudo : Form
     {
-        //private string caminhoFoto = "";
-        //public DAL.ConteudoDAL conteudoDAL = new DAL.ConteudoDAL();
+        private string caminhoFoto = "";
+        public DAL.ConteudoDAL conteudoDal = new DAL.ConteudoDAL();
 
         public VisualizarConteudo()
         {
@@ -34,13 +34,44 @@ namespace ArmandoLeite.Desktop.UI.DAL
             dataGridView1.Refresh();
         }
 
-
-        private void guna2TileButton1_Click(object sender, EventArgs e)
+        public void ApagarGrid(string idConteudo)
         {
+            DAL.ConteudoDAL conteudoDAL = new DAL.ConteudoDAL();
+            conteudoDAL.Apagarfoto(txtid.Text);
 
         }
 
-        private void btnEditar_Click(object sender, EventArgs e)
+        //public void Atualizar(string idConteudo, string tituloConteudo, string textoConteudo, string nomeEscritorConteudo, string dataConteudo, byte[] fotoConteudo)
+        public void Atualizar()
+        {
+            SalvarProduto();
+            //DAL.ConteudoDAL conteudoDAL = new DAL.ConteudoDAL();
+            //conteudoDAL.Atualizarfoto(txtid.Text,txtTitulo.Text,txtTexto.Text,txtEscritor.Text,date.Text,);
+
+        }
+
+
+        private void SalvarProduto()
+        {
+            int idConteudoConvertido;
+
+            int.TryParse(txtid.Text, out idConteudoConvertido);
+
+            conteudoDal.titulo = txtTitulo.Text;
+            conteudoDal.texto = txtTexto.Text;
+            conteudoDal.nomeEscritor = txtEscritor.Text;
+            conteudoDal.data = date.Text;
+            conteudoDal.CaminhoFoto = caminhoFoto;
+            conteudoDal.idConteudo = idConteudoConvertido;
+            conteudoDal.Atualizarfoto(conteudoDal, txtTitulo.Text, txtTexto.Text, txtEscritor.Text, date.Text, idConteudoConvertido);
+
+        }
+
+
+
+
+
+        private void guna2TileButton1_Click(object sender, EventArgs e)
         {
 
         }
@@ -89,6 +120,44 @@ namespace ArmandoLeite.Desktop.UI.DAL
         private void guna2DataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btnEditar_Click_1(object sender, EventArgs e)
+        {
+            Atualizar();
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            ApagarGrid(txtid.Text);
+            MessageBox.Show("Excluido com sucesso");
+        }
+
+        private void btnImagem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            {
+                openFileDialog.Title = "Selecionar Imagem";
+                openFileDialog.Filter = "Arquivos de Imagem|*.jpg;*.jpeg;*.png;*.gif;*.bmp|Todos os Arquivos|*.*";
+                openFileDialog.Multiselect = false;
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    caminhoFoto = openFileDialog.FileName;
+
+                    if (caminhoFoto != "")
+                    {
+                        guna2PictureBox1.Load(caminhoFoto);
+                    }
+                }
+            }
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            Menu conteudo = new Menu();
+            conteudo.Show();
+            this.Hide();
         }
     }
 }

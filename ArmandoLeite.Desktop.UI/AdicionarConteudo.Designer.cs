@@ -1,4 +1,4 @@
-﻿namespace ArmandoLeite.Desktop.UI
+﻿namespace ArmandoLeite.Desktop.UI.DAL
 {
     partial class AdicionarConteudo
     {
@@ -47,6 +47,8 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -69,6 +71,7 @@
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btnVoltar = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
@@ -374,12 +377,32 @@
             this.guna2PictureBox4.TabIndex = 46;
             this.guna2PictureBox4.TabStop = false;
             // 
+            // btnVoltar
+            // 
+            this.btnVoltar.CustomizableEdges = customizableEdges19;
+            this.btnVoltar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnVoltar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnVoltar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnVoltar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnVoltar.FillColor = System.Drawing.Color.Lime;
+            this.btnVoltar.FocusedColor = System.Drawing.Color.LimeGreen;
+            this.btnVoltar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnVoltar.ForeColor = System.Drawing.Color.Black;
+            this.btnVoltar.Location = new System.Drawing.Point(6, 9);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            this.btnVoltar.Size = new System.Drawing.Size(86, 30);
+            this.btnVoltar.TabIndex = 47;
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            // 
             // AdicionarConteudo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(1220, 563);
+            this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.guna2PictureBox4);
             this.Controls.Add(this.guna2PictureBox3);
             this.Controls.Add(this.guna2PictureBox2);
@@ -437,5 +460,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
+        private Guna.UI2.WinForms.Guna2Button btnVoltar;
     }
 }

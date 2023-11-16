@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
-namespace ArmandoLeite.Desktop.UI
+namespace ArmandoLeite.Desktop.UI.DAL
 {
     public partial class AdicionarConteudo : Form
     {
@@ -45,7 +45,7 @@ namespace ArmandoLeite.Desktop.UI
         {
 
            SalvarProduto();
-
+            MessageBox.Show("Cadastrado com sucesso!");
         }
 
         private void SalvarProduto()
@@ -65,7 +65,7 @@ namespace ArmandoLeite.Desktop.UI
             OpenFileDialog openFileDialog = new OpenFileDialog();
             {
                 openFileDialog.Title = "Selecionar Imagem";
-                openFileDialog.Filter = "Arquivos de Imagem|*.jpg;*.jpeg;*.png;*.gif;*.bmp|Todos os Arquivos|*.*";
+                openFileDialog.Filter = "Arquivos de Imagem|*.jpg;*.jpeg;*.png;*.jfif;*.gif;*.bmp|Todos os Arquivos|*.*";
                 openFileDialog.Multiselect = false;
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
@@ -132,6 +132,13 @@ namespace ArmandoLeite.Desktop.UI
                     selectedImageData = File.ReadAllBytes(imagePath); // Armazena a imagem selecionada em uma variável de classe
                 }
             }
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            Menu conteudo = new Menu();
+            conteudo.Show();
+            this.Hide();
         }
     }
 }
