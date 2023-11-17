@@ -44,22 +44,6 @@
           }
         }
       },
-      "OpenDialog/1.1.1": {
-        "runtime": {
-          "lib/net45/Gat.Controls.OpenDialog.dll": {
-            "assemblyVersion": "1.1.1.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "OpenDialogWindowHandler/0.0.0.1": {
-        "runtime": {
-          "lib/net45/OpenDialogWindowHandler.dll": {
-            "assemblyVersion": "0.0.0.1",
-            "fileVersion": "0.0.0.1"
-          }
-        }
-      },
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "dependencies": {
           "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni": "4.4.0",
@@ -213,20 +197,6 @@
       "sha512": "sha512-KSrRMb5vNi0CWSGG1++id2ZOs/1QhRqROt+qgbEAdQuGjGrFcl4AOl4/exGPUYz2wUnU42nvJqon1T3U0kPXLA==",
       "path": "microsoft.win32.registry/4.7.0",
       "hashPath": "microsoft.win32.registry.4.7.0.nupkg.sha512"
-    },
-    "OpenDialog/1.1.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-3DZOtisvEDOn748MDa771FXMpriAkMlm3P91bZsllDL3yiLEL81PSOwU26ajw3zSLO8q1EA1RymgI+CP7faN+A==",
-      "path": "opendialog/1.1.1",
-      "hashPath": "opendialog.1.1.1.nupkg.sha512"
-    },
-    "OpenDialogWindowHandler/0.0.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-VnOGie5TQYXUrNt21jKxMHhSSdsRg3m1uzKU8x9Z/LNNrYgOH913UW8jTf035LJjJ3r1GyeU5j4A6SqyUu+3JQ==",
-      "path": "opendialogwindowhandler/0.0.0.1",
-      "hashPath": "opendialogwindowhandler.0.0.0.1.nupkg.sha512"
     },
     "runtime.native.System.Data.SqlClient.sni/4.7.0": {
       "type": "package",

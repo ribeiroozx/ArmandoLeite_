@@ -28,31 +28,78 @@ namespace ArmandoLeite.Desktop.UI.DAL
         //public string caminhoAudio { get; set; }
 
         //Adicionar 
-        public void Salvarfoto(ConteudoDAL conteudoDAL)
+        public int Salvarfoto(ConteudoDAL conteudoDAL)
         {
-            byte[] Foto = GetFoto(conteudoDAL.CaminhoFoto);
+            //byte[] Foto = GetFoto(conteudoDAL.CaminhoFoto);
             //SqlConnection conn = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=BibliotecaDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;");
             //conn.Open();
-            ////SqlCommand cmd = new SqlCommand("insert into Conteudo values  ('" + titulo + "','" + texto + "','" + nomeEscritor + "','" + data + "','" + selectedFoto + "')", conn);
-            ////cmd.ExecuteNonQuery();
-            ///
+            //SqlCommand cmd = new SqlCommand("insert into Conteudo values  ('" + titulo + "','" + texto + "','" + nomeEscritor + "','" + data + "','" + selectedFoto + "')", conn);
+            //cmd.ExecuteNonQuery();
 
-            var sql = "INSERT INTO Conteudo (titulo, texto, nomeEscritor, data, foto) VALUES (@tituloConteudo, @textoConteudo, @nomeEscritorConteudo, @dataConteudo, @fotoConteudo)";
+
+
+
+            //var sql = "INSERT INTO Conteudo  (Titulo, Texto, NomeEscritor, data) OUTPUT inserted.idConteudo VALUES (@titulo, @texto, @nomeEscritor, @data)";
+
+            //var sql2 = "INSERT INTO Foto (DadoFoto,'" + idConteudo + "') VALUES (@Dadofoto,@idConteudo)";
+
+            //using (var con = new SqlConnection(@"Data Source=FAC0539750W10-1;Initial Catalog=ArmandoLeite;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"))
+            //{
+            //    con.Open();
+            //    using (var cmd = new SqlCommand(sql, con))
+            //    {
+            //        cmd.Parameters.AddWithValue("@titulo", conteudoDAL.titulo);
+            //        cmd.Parameters.AddWithValue("@texto", conteudoDAL.texto);
+            //        cmd.Parameters.AddWithValue("@nomeEscritor", conteudoDAL.nomeEscritor);
+            //        cmd.Parameters.AddWithValue("@data", conteudoDAL.data);
+            //        //cmd.Parameters.Add("@foto", System.Data.SqlDbType.Image, Foto.Length).Value = Foto;
+            //        idConteudo = Convert.ToInt32(cmd.ExecuteScalar());
+
+
+            //        using (var cmd2 = new SqlCommand(sql2, con))
+            //        {
+            //            cmd2.Parameters.Add("@Dadofoto", System.Data.SqlDbType.Image, Foto.Length).Value = Foto;
+            //            cmd2.Parameters.AddWithValue("@idConteudo", idConteudo);
+            //            cmd2.ExecuteNonQuery();
+
+            //        }
+            //    }
+            //    return idConteudo;
+            //}
+            byte[] Foto = GetFoto(conteudoDAL.CaminhoFoto);
+
+            var sql = "INSERT INTO Conteudo (Titulo, Texto, NomeEscritor, data) OUTPUT inserted.idConteudo VALUES (@titulo, @texto, @nomeEscritor, @data)";
+            var sql2 = "INSERT INTO Foto (DadoFoto, '"+idConteudo+"') VALUES (@Dadofoto, @idConteudo)";
 
             using (var con = new SqlConnection(@"Data Source=FAC0539750W10-1;Initial Catalog=ArmandoLeite;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"))
             {
                 con.Open();
+
                 using (var cmd = new SqlCommand(sql, con))
                 {
-                    cmd.Parameters.AddWithValue("@tituloConteudo", conteudoDAL.titulo);
-                    cmd.Parameters.AddWithValue("@textoConteudo", conteudoDAL.texto);
-                    cmd.Parameters.AddWithValue("@nomeEscritorConteudo", conteudoDAL.nomeEscritor);
-                    cmd.Parameters.AddWithValue("@dataConteudo", conteudoDAL.data);
-                    cmd.Parameters.Add("@fotoConteudo", System.Data.SqlDbType.Image, Foto.Length).Value = Foto;
-                    cmd.ExecuteNonQuery();
+                    cmd.Parameters.AddWithValue("@titulo", conteudoDAL.titulo);
+                    cmd.Parameters.AddWithValue("@texto", conteudoDAL.texto);
+                    cmd.Parameters.AddWithValue("@nomeEscritor", conteudoDAL.nomeEscritor);
+                    cmd.Parameters.AddWithValue("@data", conteudoDAL.data);
+
+                    // ExecuteScalar retorna o valor da cláusula OUTPUT
+                    int idConteudo = Convert.ToInt32(cmd.ExecuteScalar());
+
+                    using (var cmd2 = new SqlCommand(sql2, con))
+                    {
+                        cmd2.Parameters.Add("@Dadofoto", System.Data.SqlDbType.Image, Foto.Length).Value = Foto;
+                        cmd2.Parameters.AddWithValue("@idConteudo", idConteudo);
+                        cmd2.ExecuteNonQuery();
+                    }
+
+                    return idConteudo;
                 }
             }
+
+
+
         }
+
         private byte[] GetFoto(string caminhoFoto)
         {
             byte[] foto;
@@ -128,8 +175,6 @@ namespace ArmandoLeite.Desktop.UI.DAL
                     cmd.Parameters.AddWithValue("@data", data);
                     cmd.Parameters.AddWithValue("@idConteudo", idConteudo);
                     cmd.Parameters.AddWithValue("@foto", Foto);
-
-
                     cmd.ExecuteNonQuery();
                 }
             }
