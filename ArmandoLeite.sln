@@ -5,13 +5,7 @@ VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArmandoLeite.Desktop.UI", "ArmandoLeite.Desktop.UI\ArmandoLeite.Desktop.UI.csproj", "{5DEB270A-A3E0-4D98-877C-FF0C08A7AB0A}"
 EndProject
-<<<<<<< HEAD
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArmandoLeite.WebUI", "ArmandoLeite.WebUI\ArmandoLeite.WebUI.csproj", "{44A70723-5045-4593-A125-48D3C085E9D2}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArmandoLeite.DAL", "ArmandoLeite.DAL\ArmandoLeite.DAL.csproj", "{7D3B25BF-8787-43D8-A4AB-145ECF7B901F}"
-=======
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArmandoLeite.DAL", "ArmandoLeite.DAL\ArmandoLeite.DAL.csproj", "{CFBC4980-7FBD-45C0-9690-485D0B59D6B7}"
->>>>>>> fa2dc5e6d967dea10b6e8e540ed3883deef40390
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArmandoLeite.DAL", "ArmandoLeite.DAL\ArmandoLeite.DAL.csproj", "{7D3B25BF-8787-43D8-A4AB-145ECF7B901F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,21 +17,10 @@ Global
 		{5DEB270A-A3E0-4D98-877C-FF0C08A7AB0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DEB270A-A3E0-4D98-877C-FF0C08A7AB0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DEB270A-A3E0-4D98-877C-FF0C08A7AB0A}.Release|Any CPU.Build.0 = Release|Any CPU
-<<<<<<< HEAD
-		{44A70723-5045-4593-A125-48D3C085E9D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{44A70723-5045-4593-A125-48D3C085E9D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{44A70723-5045-4593-A125-48D3C085E9D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{44A70723-5045-4593-A125-48D3C085E9D2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7D3B25BF-8787-43D8-A4AB-145ECF7B901F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7D3B25BF-8787-43D8-A4AB-145ECF7B901F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D3B25BF-8787-43D8-A4AB-145ECF7B901F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D3B25BF-8787-43D8-A4AB-145ECF7B901F}.Release|Any CPU.Build.0 = Release|Any CPU
-=======
-		{CFBC4980-7FBD-45C0-9690-485D0B59D6B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CFBC4980-7FBD-45C0-9690-485D0B59D6B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CFBC4980-7FBD-45C0-9690-485D0B59D6B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CFBC4980-7FBD-45C0-9690-485D0B59D6B7}.Release|Any CPU.Build.0 = Release|Any CPU
->>>>>>> fa2dc5e6d967dea10b6e8e540ed3883deef40390
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

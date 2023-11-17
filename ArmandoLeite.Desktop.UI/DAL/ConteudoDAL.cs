@@ -128,8 +128,6 @@ namespace ArmandoLeite.Desktop.UI.DAL
                     cmd.Parameters.AddWithValue("@data", data);
                     cmd.Parameters.AddWithValue("@idConteudo", idConteudo);
                     cmd.Parameters.AddWithValue("@foto", Foto);
-
-
                     cmd.ExecuteNonQuery();
                 }
             }
