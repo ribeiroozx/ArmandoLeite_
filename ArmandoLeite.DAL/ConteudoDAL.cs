@@ -12,14 +12,13 @@ namespace ArmandoLeite.Desktop.UI.DAL
     {
         #region Método Adicionar Postagens
 
-        public int idConteudo { get; set; }
+        public int IdAdicionar { get; set; }
         public string titulo { get; set; }
         public string nomeEscritor { get; set; }
         public string texto { get; set; }
         public string data { get; set; }
+        public byte[] ByteFoto { get; set; }
         public string CaminhoFoto { get; set; }
-        public byte[] foto { get; set; }
-
         //public byte[] selectedPDF { get; set; }
         //public string caminhoPDF { get; set; }
         //public byte[] selectedVideo { get; set; }
@@ -67,6 +66,13 @@ namespace ArmandoLeite.Desktop.UI.DAL
         }
 
 
+        public int idConteudo { get; set; }
+        public string Titulo { get; set; }
+        public string Texto { get; set; }
+        public string NomeEscritor { get; set; }
+        public string dataTime { get; set; }
+        public byte[] foto { get; set; }
+
 
         //Selecionar
         public List<ConteudoDAL> Selecionarfoto(string idConteudo)
@@ -82,14 +88,15 @@ namespace ArmandoLeite.Desktop.UI.DAL
             {
                 ConteudoDAL conteudo = new ConteudoDAL();
                 conteudo.idConteudo = dr.GetInt32(dr.GetOrdinal("idConteudo"));
-                conteudo.titulo = dr.GetString(dr.GetOrdinal("Titulo"));
-                conteudo.texto = dr.GetString(dr.GetOrdinal("Texto"));
-                conteudo.nomeEscritor = dr.GetString(dr.GetOrdinal("NomeEscritor"));
-                conteudo.data = dr.GetString(dr.GetOrdinal("data"));
+                conteudo.Titulo = dr.GetString(dr.GetOrdinal("Titulo"));
+                conteudo.Texto = dr.GetString(dr.GetOrdinal("Texto"));
+                conteudo.NomeEscritor = dr.GetString(dr.GetOrdinal("NomeEscritor"));
+                conteudo.dataTime = dr.GetString(dr.GetOrdinal("data"));
 
                 if (dr["foto"] != DBNull.Value)
                 {
                     conteudo.foto = (byte[])dr["foto"];
+
                 }
 
                 usuarioDals.Add(conteudo);
@@ -139,7 +146,6 @@ namespace ArmandoLeite.Desktop.UI.DAL
 
 
     }
-    #endregion
 }
 
 
@@ -225,7 +231,7 @@ namespace ArmandoLeite.Desktop.UI.DAL
 //    return idAdicionar;
 //}
 
-//#endregion
+#endregion
 
 //    #region Método Deletar Postagens
 
