@@ -66,7 +66,7 @@ namespace ArmandoLeite.Desktop.UI.DAL
             {
                 openFileDialog.Title = "Selecionar Imagem";
                 openFileDialog.Filter = "Arquivos de Imagem|*.jpg;*.jpeg;*.png;*.jfif;*.gif;*.bmp|Todos os Arquivos|*.*";
-                openFileDialog.Multiselect = false;
+                openFileDialog.Multiselect = true;
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {

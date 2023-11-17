@@ -12,18 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-<<<<<<< HEAD
       "C:\\Users\\marcel.vbdias\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\marcel.vbdias\\.nuget\\packages",
-=======
-<<<<<<< HEAD
-      "C:\\Users\\gabriel.rcruz7\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\gabriel.rcruz7\\.nuget\\packages",
-=======
-      "C:\\Users\\mauricio.snasciment1\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\mauricio.snasciment1\\.nuget\\packages",
->>>>>>> fa2dc5e6d967dea10b6e8e540ed3883deef40390
->>>>>>> d954184d8734614516325f6e85e2606356dd8a3d
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ],
     "configProperties": {
