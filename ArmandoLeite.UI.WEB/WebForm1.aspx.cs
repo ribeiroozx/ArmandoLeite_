@@ -13,5 +13,22 @@ namespace ArmandoLeite.UI.WEB
         {
 
         }
+
+
+        private void ValidarCamposBrancos(string nome, int idade, string endereco)
+        {
+           string script = "alert('Cadastrado com sucesso');";
+           ClientScript.RegisterStartupScript(this.GetType(), "Popup", script, true);
+
+        }
+
+
+        protected void BtnEnviar_Click(object sender, EventArgs e)
+        {
+
+            ValidarCamposBrancos(TxtNome.Text, Convert.ToInt32(TxtIdade.Text), TxtEndereco.Text);
+        }
     }
 }
+
+       
