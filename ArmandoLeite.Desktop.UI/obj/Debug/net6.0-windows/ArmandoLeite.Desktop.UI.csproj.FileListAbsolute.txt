@@ -104,3 +104,4 @@ C:\Users\marcel.vbdias\OneDrive - SENAC - SP\Documentos\GitHub\ArmandoLeite.Desk
 C:\Users\marcel.vbdias\OneDrive - SENAC - SP\Documentos\GitHub\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.dll
 C:\Users\marcel.vbdias\OneDrive - SENAC - SP\Documentos\GitHub\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\refint\ArmandoLeite.Desktop.UI.dll
 C:\Users\marcel.vbdias\OneDrive - SENAC - SP\Documentos\GitHub\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.pdb
+C:\Users\mauricio.snasciment1\Documents\GitHub\ArmandoLeite_\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.DAL.AdicionarConteudo.resources
