@@ -127,7 +127,7 @@
             this.guna2GroupBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.White;
-            this.guna2GroupBox1.Location = new System.Drawing.Point(93, 73);
+            this.guna2GroupBox1.Location = new System.Drawing.Point(77, 412);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
             this.guna2GroupBox1.ShadowDecoration.CustomizableEdges = customizableEdges18;
             this.guna2GroupBox1.Size = new System.Drawing.Size(892, 470);
@@ -406,9 +406,10 @@
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(337, 0);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(234, 34);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(189, 34);
             this.guna2HtmlLabel1.TabIndex = 29;
-            this.guna2HtmlLabel1.Text = "Vizualizar Conteúdo";
+            this.guna2HtmlLabel1.Text = "Editar Conteúdo";
+            this.guna2HtmlLabel1.Click += new System.EventHandler(this.guna2HtmlLabel1_Click);
             // 
             // btnEditar
             // 
@@ -426,7 +427,7 @@
             this.btnEditar.FillColor2 = System.Drawing.Color.LimeGreen;
             this.btnEditar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnEditar.ForeColor = System.Drawing.Color.Black;
-            this.btnEditar.Location = new System.Drawing.Point(991, 150);
+            this.btnEditar.Location = new System.Drawing.Point(991, 143);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.ShadowDecoration.CustomizableEdges = customizableEdges20;
             this.btnEditar.Size = new System.Drawing.Size(109, 48);
@@ -515,11 +516,12 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(139, 600);
+            this.dataGridView1.Location = new System.Drawing.Point(77, 87);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(810, 240);
             this.dataGridView1.TabIndex = 64;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // btnVoltar
             // 
@@ -600,5 +602,7 @@
         private Guna.UI2.WinForms.Guna2GradientButton btnBuscar;
         private DataGridView dataGridView1;
         private Guna.UI2.WinForms.Guna2Button btnVoltar;
+        private CheckBox checkBox1;
+        private Button button1;
     }
 }

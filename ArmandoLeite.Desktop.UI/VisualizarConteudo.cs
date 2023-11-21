@@ -30,6 +30,7 @@ namespace ArmandoLeite.Desktop.UI.DAL
             DataGridViewImageColumn fotoColumn = (DataGridViewImageColumn)dataGridView1.Columns["foto"];
             fotoColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
             dataGridView1.RowTemplate.Height = 100;
+           
 
             dataGridView1.Refresh();
         }
@@ -158,6 +159,16 @@ namespace ArmandoLeite.Desktop.UI.DAL
             Menu conteudo = new Menu();
             conteudo.Show();
             this.Hide();
+        }
+
+        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
