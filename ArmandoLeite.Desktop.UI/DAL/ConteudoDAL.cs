@@ -69,7 +69,7 @@ namespace ArmandoLeite.Desktop.UI.DAL
             byte[] Foto = GetFoto(conteudoDAL.CaminhoFoto);
 
             var sql = "INSERT INTO Conteudo (Titulo, Texto, NomeEscritor, data) OUTPUT inserted.idConteudo VALUES (@titulo, @texto, @nomeEscritor, @data)";
-            var sql2 = "INSERT INTO Foto (DadoFoto, '"+idConteudo+"') VALUES (@Dadofoto, @idConteudo)";
+            var sql2 = "INSERT INTO Foto (DadoFoto, FkConteudo) VALUES (@Dadofoto, @idConteudo)";
 
             using (var con = new SqlConnection(@"Data Source=FAC0539750W10-1;Initial Catalog=ArmandoLeite;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"))
             {
@@ -116,14 +116,52 @@ namespace ArmandoLeite.Desktop.UI.DAL
 
 
         //Selecionar
+        //public List<ConteudoDAL> Selecionarfoto(string idConteudo)
+        //{
+        //    SqlConnection conn = new SqlConnection(@"Data Source=FAC0539750W10-1;Initial Catalog=ArmandoLeite;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+        //    conn.Open();
+
+
+        //    SqlCommand cmd = new SqlCommand("select *from Conteudo where idConteudo='" + idConteudo + "'", conn);
+
+        //    SqlDataReader dr = cmd.ExecuteReader();
+        //    List<ConteudoDAL> usuarioDals = new List<ConteudoDAL>();
+
+
+        //    while (dr.Read())
+        //    {
+        //        ConteudoDAL conteudo = new ConteudoDAL();
+        //        conteudo.idConteudo = dr.GetInt32(dr.GetOrdinal("idConteudo"));
+        //        conteudo.titulo = dr.GetString(dr.GetOrdinal("Titulo"));
+        //        conteudo.texto = dr.GetString(dr.GetOrdinal("Texto"));
+        //        conteudo.nomeEscritor = dr.GetString(dr.GetOrdinal("NomeEscritor"));
+        //        conteudo.data = dr.GetString(dr.GetOrdinal("data"));
+
+        //        if (dr["DadoFoto"] != DBNull.Value)
+        //        {
+        //            conteudo.foto = (byte[])dr["DadoFoto"];
+        //        }
+
+        //        usuarioDals.Add(conteudo);
+        //    }
+        //    dr.Close();
+        //    return usuarioDals;
+        //}
         public List<ConteudoDAL> Selecionarfoto(string idConteudo)
         {
             SqlConnection conn = new SqlConnection(@"Data Source=FAC0539750W10-1;Initial Catalog=ArmandoLeite;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             conn.Open();
-            SqlCommand cmd = new SqlCommand("select *from Conteudo where idConteudo='" + idConteudo + "'", conn);
+
+            string sql = "SELECT Conteudo.*, Foto.DadoFoto " +
+                         "FROM Conteudo " +
+                         "INNER JOIN Foto ON Conteudo.idConteudo = Foto.FkConteudo " +
+                         "WHERE Conteudo.idConteudo = '" + idConteudo + "'";
+
+
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            cmd.Parameters.AddWithValue("@idConteudo", idConteudo);
             SqlDataReader dr = cmd.ExecuteReader();
             List<ConteudoDAL> usuarioDals = new List<ConteudoDAL>();
-
 
             while (dr.Read())
             {
@@ -134,13 +172,14 @@ namespace ArmandoLeite.Desktop.UI.DAL
                 conteudo.nomeEscritor = dr.GetString(dr.GetOrdinal("NomeEscritor"));
                 conteudo.data = dr.GetString(dr.GetOrdinal("data"));
 
-                if (dr["foto"] != DBNull.Value)
+                if (dr["DadoFoto"] != DBNull.Value)
                 {
-                    conteudo.foto = (byte[])dr["foto"];
+                    conteudo.foto = (byte[])dr["DadoFoto"];
                 }
 
                 usuarioDals.Add(conteudo);
             }
+
             dr.Close();
             return usuarioDals;
         }
@@ -177,6 +216,11 @@ namespace ArmandoLeite.Desktop.UI.DAL
                     cmd.Parameters.AddWithValue("@foto", Foto);
                     cmd.ExecuteNonQuery();
                 }
+
+
+
+
+
             }
         }
     }
