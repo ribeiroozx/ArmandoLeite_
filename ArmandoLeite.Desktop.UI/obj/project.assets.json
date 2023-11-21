@@ -576,23 +576,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\marcel.vbdias\\.nuget\\packages\\": {},
+    "C:\\Users\\gabriel.rcruz7\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\marcel.vbdias\\Documents\\GitHub\\ArmandoLeite_\\ArmandoLeite.Desktop.UI\\ArmandoLeite.Desktop.UI.csproj",
+      "projectUniqueName": "C:\\Users\\gabriel.rcruz7\\source\\repos\\ArmandoLeite\\ArmandoLeite.Desktop.UI\\ArmandoLeite.Desktop.UI.csproj",
       "projectName": "ArmandoLeite.Desktop.UI",
-      "projectPath": "C:\\Users\\marcel.vbdias\\Documents\\GitHub\\ArmandoLeite_\\ArmandoLeite.Desktop.UI\\ArmandoLeite.Desktop.UI.csproj",
-      "packagesPath": "C:\\Users\\marcel.vbdias\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\marcel.vbdias\\Documents\\GitHub\\ArmandoLeite_\\ArmandoLeite.Desktop.UI\\obj\\",
+      "projectPath": "C:\\Users\\gabriel.rcruz7\\source\\repos\\ArmandoLeite\\ArmandoLeite.Desktop.UI\\ArmandoLeite.Desktop.UI.csproj",
+      "packagesPath": "C:\\Users\\gabriel.rcruz7\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gabriel.rcruz7\\source\\repos\\ArmandoLeite\\ArmandoLeite.Desktop.UI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\marcel.vbdias\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gabriel.rcruz7\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -649,13 +649,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema ao ler o arquivo de cache C:\\Users\\marcel.vbdias\\Documents\\GitHub\\ArmandoLeite_\\ArmandoLeite.Desktop.UI\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
