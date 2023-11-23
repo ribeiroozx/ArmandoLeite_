@@ -14,19 +14,18 @@ namespace ArmandoLeite.UI.WEB
 
         }
 
-
-        private void ValidarCamposBrancos(string nome, int idade, string endereco)
+        public static bool ValidarCampos(string Nome, string Idade, string Endereco)
         {
-           string script = "alert('Cadastrado com sucesso');";
-           ClientScript.RegisterStartupScript(this.GetType(), "Popup", script, true);
-
+            // Aqui você pode adicionar lógica para validar os campos no lado do servidor
+            // Retorna verdadeiro se os campos são válidos, falso caso contrário
+            return !string.IsNullOrEmpty(Nome) && !string.IsNullOrEmpty(Idade) && !string.IsNullOrEmpty(Endereco);
         }
 
 
         protected void BtnEnviar_Click(object sender, EventArgs e)
         {
 
-            ValidarCamposBrancos(TxtNome.Text, Convert.ToInt32(TxtIdade.Text), TxtEndereco.Text);
+            ValidarCampos(TxtNome.Text, (TxtIdade.Text), TxtEndereco.Text);
         }
     }
 }

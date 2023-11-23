@@ -74,3 +74,11 @@ C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.UI.WEB\obj\De
 C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.UI.WEB\obj\Debug\ArmandoLeite.UI.WEB.csproj.CopyComplete
 C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.UI.WEB\obj\Debug\ArmandoLeite.UI.WEB.dll
 C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.UI.WEB\obj\Debug\ArmandoLeite.UI.WEB.pdb
+C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.UI.WEB\bin\AjaxControlToolkit.HtmlEditor.Sanitizer.dll
+C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.UI.WEB\bin\HtmlAgilityPack.dll
+C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.UI.WEB\bin\Microsoft.Configuration.ConfigurationBuilders.Base.dll
+C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.UI.WEB\bin\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.dll
+C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.UI.WEB\bin\HtmlAgilityPack.pdb
+C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.UI.WEB\bin\HtmlAgilityPack.xml
+C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.UI.WEB\bin\Microsoft.Configuration.ConfigurationBuilders.Base.xml
+C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.UI.WEB\bin\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.xml
