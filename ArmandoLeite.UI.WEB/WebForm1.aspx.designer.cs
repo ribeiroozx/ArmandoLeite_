@@ -15,6 +15,15 @@ namespace ArmandoLeite.UI.WEB
     {
 
         /// <summary>
+        /// Controle ValidationSummary2.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary2;
+
+        /// <summary>
         /// Controle TxtNome.
         /// </summary>
         /// <remarks>
@@ -22,6 +31,15 @@ namespace ArmandoLeite.UI.WEB
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TxtNome;
+
+        /// <summary>
+        /// Controle ValidadorCampoNome.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ValidadorCampoNome;
 
         /// <summary>
         /// Controle TxtIdade.
@@ -33,6 +51,15 @@ namespace ArmandoLeite.UI.WEB
         protected global::System.Web.UI.WebControls.TextBox TxtIdade;
 
         /// <summary>
+        /// Controle ValidadorCampoIdade.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ValidadorCampoIdade;
+
+        /// <summary>
         /// Controle TxtEndereco.
         /// </summary>
         /// <remarks>
@@ -40,6 +67,15 @@ namespace ArmandoLeite.UI.WEB
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TxtEndereco;
+
+        /// <summary>
+        /// Controle ValidadorCampoEndereco.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ValidadorCampoEndereco;
 
         /// <summary>
         /// Controle BtnEnviar.
