@@ -15,75 +15,30 @@ namespace ArmandoLeite.UI.WEB
     {
 
         /// <summary>
-        /// Controle ValidationSummary2.
+        /// Controle ToolkitScriptManager1.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary2;
+        protected global::AjaxControlToolkit.ToolkitScriptManager ToolkitScriptManager1;
 
         /// <summary>
-        /// Controle TxtNome.
+        /// Controle txtDate.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtNome;
+        protected global::System.Web.UI.WebControls.TextBox txtDate;
 
         /// <summary>
-        /// Controle ValidadorCampoNome.
+        /// Controle CalendarExtender1.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator ValidadorCampoNome;
-
-        /// <summary>
-        /// Controle TxtIdade.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtIdade;
-
-        /// <summary>
-        /// Controle ValidadorCampoIdade.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator ValidadorCampoIdade;
-
-        /// <summary>
-        /// Controle TxtEndereco.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtEndereco;
-
-        /// <summary>
-        /// Controle ValidadorCampoEndereco.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator ValidadorCampoEndereco;
-
-        /// <summary>
-        /// Controle BtnEnviar.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnEnviar;
+        protected global::AjaxControlToolkit.CalendarExtender CalendarExtender1;
     }
 }

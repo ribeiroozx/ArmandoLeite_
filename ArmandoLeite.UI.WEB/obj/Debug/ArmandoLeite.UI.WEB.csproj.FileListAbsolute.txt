@@ -150,3 +150,5 @@ C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.UI.WEB\obj\De
 C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.UI.WEB\obj\Debug\ArmandoLeite.UI.WEB.csproj.CopyComplete
 C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.UI.WEB\obj\Debug\ArmandoLeite.UI.WEB.dll
 C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.UI.WEB\obj\Debug\ArmandoLeite.UI.WEB.pdb
+C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.UI.WEB\bin\AjaxControlToolkit.dll
+C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.UI.WEB\bin\CalendarExtenderPlus.dll
