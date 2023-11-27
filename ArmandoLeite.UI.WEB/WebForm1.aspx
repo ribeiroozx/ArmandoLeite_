@@ -1,37 +1,48 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="ArmandoLeite.UI.WEB.WebForm1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Principal.Master" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="ArmandoLeite.UI.WEB.WebForm1" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/ [email protected]/dist/umd/popper.min.js" ></script>
-    <link href="https://cdn.jsdelivr.net/npm/ [email protected]/dist/css/popper.min.css" rel="stylesheet" />
-    <script src="Scripts/MicrosoftAjax.js" type="text/javascript"></script>
-    <script src="Scripts/MicrosoftAjaxWebForms.js" type="text/javascript"></script>
-    <script src="Scripts/MicrosoftAjaxWebForms.debug.js" type="text/javascript"></script>
-    <script src="Scripts/AjaxControlToolkit/ExtenderBase/BaseScripts.js" type="text/javascript"></script>
-
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <div>
-        <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
-            <Scripts>
-                <asp:ScriptReference Name="MsAjaxBundle" />
-                <asp:ScriptReference Name="WebForms.js" Path="~/Scripts/WebForms/WebForms.js" />
-                <asp:ScriptReference Name="WebUIValidation.js" Path="~/Scripts/WebForms/WebUIValidation.js" />
-                <asp:ScriptReference Name="MenuStandards.js" Path="~/Scripts/WebForms/MenuStandards.js" />
-            </Scripts>
-        </asp:ToolkitScriptManager>
+    <asp:ScriptManager runat="server"></asp:ScriptManager>
 
-        Data:
-        <asp:TextBox ID="txtDate" runat="server"></asp:TextBox>
-        <asp:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="txtDate"></asp:CalendarExtender>
+    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+    <ContentTemplate>
+        
+        <asp:Label ID="Label1" runat="server" Text="Nome"></asp:Label>
+        <asp:TextBox ID="TextNome" runat="server"></asp:TextBox>
 
-        <!-- Outros elementos da sua página -->
-    </div>
+        <asp:Label ID="Label2" runat="server" Text="Idade"></asp:Label>
+        <asp:TextBox ID="TextIdade" runat="server"></asp:TextBox>
+
+        <asp:Label ID="Label3" runat="server" Text="Endereço"></asp:Label>
+        <asp:TextBox ID="TextEndereco" runat="server"></asp:TextBox>
+
+        <asp:Button ID="BtnEnviar" runat="server" Text="Enviar" OnClick="BtnEnviar_Click1" />
+
+        <asp:Label ID="Mensagem" runat="server" Text="Cadastro Concluido" Visible="False"></asp:Label>
+
+        <asp:UpdateProgress ID="UpdateProgress1" runat="server">
+            <ProgressTemplate>
+                <img src="imagens/PUskErp.gif" />
+            </ProgressTemplate>
+        </asp:UpdateProgress>
+    </ContentTemplate>
+    </asp:UpdatePanel>
+
+
+
+
 
 </asp:Content>
+<asp:Content ID="Content3" runat="server" contentplaceholderid="ContentPlaceHolder2">
+    <style type="text/css">
+        .auto-style2 {
+            width: 383px;
+            height: 480px;
+        }
+    </style>
+</asp:Content>
+
