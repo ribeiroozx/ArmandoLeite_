@@ -16,6 +16,8 @@ namespace ArmandoLeite.Desktop.UI.DAL
         
 
         private string caminhoPdf = "";
+        private string caminhoAudio = "";
+        private string caminhoVideo = "";
         public DAL.ConteudoDAL conteudoDal = new DAL.ConteudoDAL();
 
 
@@ -54,9 +56,11 @@ namespace ArmandoLeite.Desktop.UI.DAL
             //conteudoDal.texto = txtTexto.Text;
             //conteudoDal.nomeEscritor = txtEscritor.Text;
             conteudoDal.data = date.Text;
-            conteudoDal.Semestre = 
+            conteudoDal.Semestre = comboBox1.Text;
             conteudoDal.CaminhoPdf = caminhoPdf;
-            conteudoDal.Salvarfoto(conteudoDal);
+            conteudoDal.CaminhoAudio = caminhoAudio;
+            conteudoDal.CaminhoVideo = caminhoVideo;
+            conteudoDal.AdicionarConteudo(conteudoDal);
 
         }
 
@@ -69,9 +73,10 @@ namespace ArmandoLeite.Desktop.UI.DAL
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    byte[] selectedImageData;
-                    string imagePath = openFileDialog.FileName;
-                    selectedImageData = File.ReadAllBytes(imagePath); // Armazena a imagem selecionada em uma variável de classe
+                    caminhoPdf = openFileDialog.FileName;
+                    //byte[] selectedImageData;
+                    //string imagePath = openFileDialog.FileName;
+                    //selectedImageData = File.ReadAllBytes(imagePath); // Armazena a imagem selecionada em uma variável de classe
                 }
             }
 
@@ -86,11 +91,12 @@ namespace ArmandoLeite.Desktop.UI.DAL
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    byte[] selectedImageData;
-                    string imagePath = openFileDialog.FileName;
-                    selectedImageData = File.ReadAllBytes(imagePath);
-                 
-                        // Armazena a imagem selecionada em uma variável de classe
+                    caminhoAudio = openFileDialog.FileName;
+                    //byte[] selectedImageData;
+                    //string imagePath = openFileDialog.FileName;
+                    //selectedImageData = File.ReadAllBytes(imagePath);
+
+                    //    // Armazena a imagem selecionada em uma variável de classe
                 }
             }
         }
@@ -104,10 +110,11 @@ namespace ArmandoLeite.Desktop.UI.DAL
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    byte[] selectedImageData;
+                    caminhoVideo = openFileDialog.FileName;
+                    //byte[] selectedImageData;
 
-                    string imagePath = openFileDialog.FileName;
-                    selectedImageData = File.ReadAllBytes(imagePath); // Armazena a imagem selecionada em uma variável de classe
+                    //string imagePath = openFileDialog.FileName;
+                    //selectedImageData = File.ReadAllBytes(imagePath); // Armazena a imagem selecionada em uma variável de classe
                 }
             }
         }
