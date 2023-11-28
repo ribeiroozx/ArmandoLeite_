@@ -22,3 +22,15 @@ C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.DAL\obj\Debug
 C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.DAL\obj\Debug\net6.0\refint\ArmandoLeite.DAL.dll
 C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.DAL\obj\Debug\net6.0\ArmandoLeite.DAL.pdb
 C:\Users\marcel.vbdias\Documents\GitHub\ArmandoLeite_\ArmandoLeite.DAL\obj\Debug\net6.0\ref\ArmandoLeite.DAL.dll
+C:\Users\marcel.vbdias\source\repos\ArmandoLeite_\ArmandoLeite.DAL\bin\Debug\net6.0\ArmandoLeite.DAL.deps.json
+C:\Users\marcel.vbdias\source\repos\ArmandoLeite_\ArmandoLeite.DAL\bin\Debug\net6.0\ArmandoLeite.DAL.dll
+C:\Users\marcel.vbdias\source\repos\ArmandoLeite_\ArmandoLeite.DAL\bin\Debug\net6.0\ArmandoLeite.DAL.pdb
+C:\Users\marcel.vbdias\source\repos\ArmandoLeite_\ArmandoLeite.DAL\obj\Debug\net6.0\ArmandoLeite.DAL.csproj.AssemblyReference.cache
+C:\Users\marcel.vbdias\source\repos\ArmandoLeite_\ArmandoLeite.DAL\obj\Debug\net6.0\ArmandoLeite.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marcel.vbdias\source\repos\ArmandoLeite_\ArmandoLeite.DAL\obj\Debug\net6.0\ArmandoLeite.DAL.AssemblyInfoInputs.cache
+C:\Users\marcel.vbdias\source\repos\ArmandoLeite_\ArmandoLeite.DAL\obj\Debug\net6.0\ArmandoLeite.DAL.AssemblyInfo.cs
+C:\Users\marcel.vbdias\source\repos\ArmandoLeite_\ArmandoLeite.DAL\obj\Debug\net6.0\ArmandoLeite.DAL.csproj.CoreCompileInputs.cache
+C:\Users\marcel.vbdias\source\repos\ArmandoLeite_\ArmandoLeite.DAL\obj\Debug\net6.0\ArmandoLeite.DAL.dll
+C:\Users\marcel.vbdias\source\repos\ArmandoLeite_\ArmandoLeite.DAL\obj\Debug\net6.0\refint\ArmandoLeite.DAL.dll
+C:\Users\marcel.vbdias\source\repos\ArmandoLeite_\ArmandoLeite.DAL\obj\Debug\net6.0\ArmandoLeite.DAL.pdb
+C:\Users\marcel.vbdias\source\repos\ArmandoLeite_\ArmandoLeite.DAL\obj\Debug\net6.0\ref\ArmandoLeite.DAL.dll
