@@ -78,7 +78,7 @@ namespace ArmandoLeite.Desktop.UI.DAL
 
             using (var con = new SqlConnection(@"Data Source=FAC0539750W10-1;Initial Catalog=ArmandoLeite;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"))
             {
-
+                con.Open();
                 using (var cmd = new SqlCommand(sql, con))
                 {
                     cmd.Parameters.AddWithValue("@titulo", conteudoDAL.titulo);
@@ -103,7 +103,6 @@ namespace ArmandoLeite.Desktop.UI.DAL
                         cmd3.ExecuteNonQuery();
 
                     }
-
 
 
                     using (var cmd4 = new SqlCommand(sql4, con))
@@ -212,8 +211,6 @@ namespace ArmandoLeite.Desktop.UI.DAL
             SqlCommand cmd4 = new SqlCommand("delete from Pdf where FkConteudo=" + idConteudo, conn);
             cmd3.ExecuteNonQuery();
         }
-    }
-}
 
 
         //Atualizar
@@ -264,57 +261,44 @@ namespace ArmandoLeite.Desktop.UI.DAL
                 }
             }
         }
-
-
-
-
-
-<<<<<<< HEAD
-
-
-
-
-
-
-
-
-
-        //public void Atualizarfoto(ConteudoDAL conteudoDAL, string titulo, string texto, string nomeEscritor, string data, int idConteudo)
-        //{
-
-        //    byte[] Pdf = GetPdf(conteudoDAL.CaminhoPdf);
-        //    byte[] Video = GetVideo(conteudoDAL.CaminhoVideo);
-        //    byte[] Audio = GetAudio(conteudoDAL.CaminhoAudio);
-
-        //    var sql = "UPDATE Conteudo SET Titulo = @Titulo, Texto = @Texto, NomeEscritor = @NomeEscritor, data = @data, foto = @foto WHERE idConteudo = @idConteudo";
-
-        //    using (var con = new SqlConnection(@"Data Source=FAC0539750W10-1;Initial Catalog=ArmandoLeite;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"))
-        //    {
-
-        //        con.Open();
-        //        using (var cmd = new SqlCommand(sql, con))
-        //        {
-        //            cmd.Parameters.AddWithValue("@titulo", conteudoDAL.titulo);
-        //            cmd.Parameters.AddWithValue("@data", conteudoDAL.data);
-        //            cmd.Parameters.AddWithValue("@Semestre", conteudoDAL.Semestre);
-
-        //            cmd.Parameters.AddWithValue("@titulo", titulo);
-        //            cmd.Parameters.AddWithValue("@data", data);
-        //            cmd.Parameters.AddWithValue("@idConteudo", idConteudo);
-        //            cmd.Parameters.AddWithValue("@foto", Foto);
-        //            cmd.ExecuteNonQuery();
-        //        }
-        //    }
-        //}
     }
 }
 #endregion
-=======
-    //        }
-    //    }
-    //}
-    #endregion
->>>>>>> 77d42ce19dc57dda974b25e5706afbbcfca78035
+
+
+
+
+
+
+
+//public void Atualizarfoto(ConteudoDAL conteudoDAL, string titulo, string texto, string nomeEscritor, string data, int idConteudo)
+//{
+
+//    byte[] Pdf = GetPdf(conteudoDAL.CaminhoPdf);
+//    byte[] Video = GetVideo(conteudoDAL.CaminhoVideo);
+//    byte[] Audio = GetAudio(conteudoDAL.CaminhoAudio);
+
+//    var sql = "UPDATE Conteudo SET Titulo = @Titulo, Texto = @Texto, NomeEscritor = @NomeEscritor, data = @data, foto = @foto WHERE idConteudo = @idConteudo";
+
+//    using (var con = new SqlConnection(@"Data Source=FAC0539750W10-1;Initial Catalog=ArmandoLeite;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"))
+//    {
+
+//        con.Open();
+//        using (var cmd = new SqlCommand(sql, con))
+//        {
+//            cmd.Parameters.AddWithValue("@titulo", conteudoDAL.titulo);
+//            cmd.Parameters.AddWithValue("@data", conteudoDAL.data);
+//            cmd.Parameters.AddWithValue("@Semestre", conteudoDAL.Semestre);
+
+//            cmd.Parameters.AddWithValue("@titulo", titulo);
+//            cmd.Parameters.AddWithValue("@data", data);
+//            cmd.Parameters.AddWithValue("@idConteudo", idConteudo);
+//            cmd.Parameters.AddWithValue("@foto", Foto);
+//            cmd.ExecuteNonQuery();
+//        }
+//    }
+//}
+
 
 
 
@@ -438,4 +422,12 @@ namespace ArmandoLeite.Desktop.UI.DAL
 //        cmd.ExecuteNonQuery();
 //    }
 //    #endregion
+
+
+
+
+
+
+
+
 //}
