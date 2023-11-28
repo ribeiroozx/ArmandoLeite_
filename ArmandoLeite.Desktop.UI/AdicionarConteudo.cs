@@ -51,8 +51,8 @@ namespace ArmandoLeite.Desktop.UI.DAL
         private void SalvarProduto()
         {
             conteudoDal.titulo = txtTitulo.Text;
-            conteudoDal.texto = txtTexto.Text;
-            conteudoDal.nomeEscritor = txtEscritor.Text;
+            //conteudoDal.texto = txtTexto.Text;
+            //conteudoDal.nomeEscritor = txtEscritor.Text;
             conteudoDal.data = date.Text;
             conteudoDal.Semestre = 
             conteudoDal.CaminhoFoto = caminhoFoto;
@@ -75,7 +75,7 @@ namespace ArmandoLeite.Desktop.UI.DAL
 
                     if (caminhoFoto != "")
                     {
-                        guna2PictureBox1.Load(caminhoFoto);
+                        //guna2PictureBox1.Load(caminhoFoto);
                     }
                 }
             }

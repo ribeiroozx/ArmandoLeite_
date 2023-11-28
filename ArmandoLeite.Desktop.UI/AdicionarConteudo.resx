@@ -61,7 +61,7 @@
   <data name="btnPdf.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAA05JREFUaEPtmN0re3EYwDdjueDCBUuhNUq0lcIkN+NiL+XGjSuSxNXS/gE3uyP3
+        DAAACwwBP0AiyAAAA05JREFUaEPtmN0re3EYwDdjueDCBUuhNUq0lcIkN+NiL+XGjSuSxNXS/gE3uyP3
         pN2t1MSFXGh3ypUoNYqWSAnlbYuwkefX8/Sck344OzsvzrBPPR37Ps9z9ny2ds7xNcEv4W+ImEwmXaK/
         vx+en5/5XbTBEBGMQCAAT09P/E7qkSWiJe9lPB4P3N/fc0YdhonYbDY69vb2wsPDA2eVY5jI4eEh1NXV
         0d89PT2QTqe5QhmGiSAnJyfgcDjodXt7O1xfX9O6EgwVQU5PT6GpqYnW2tra4OrqijP5YbgIcnFxAa2t
@@ -175,7 +175,7 @@
   <data name="btnVideo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAAWJJREFUaEPtmEuqgzAUhh37WIYj0QX4AIcOnDp0LY6duRsnQrciiHsQJ+eSkNhD
+        DAAACwwBP0AiyAAAAWJJREFUaEPtmEuqgzAUhh37WIYj0QX4AIcOnDp0LY6duRsnQrciiHsQJ+eSkNhD
         60Xwqvck5IOTtn8OiR+kra0FmmBEqKGXSBzHYFmWkpWm6Vtkr0Gl+hLB7GUMSjnO+HjUhKGU44yPR00Y
         SjnO+CgDVUtfEdUwItQwItQwItS4VaQoCgjDEIZhEMl93Coi12JVliWM4yhmrgdf920ijuPwR9d1oW1b
         WNdVdFwHvu7bROZ5hrqut9e+70Pf96LrGuTa/Pln8Fc+13q9XhAEwZZfedzwXreLMNix6roOPM/jc7Zt
@@ -187,7 +187,7 @@
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAA6EAAAK+CAYAAABTrBjQAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAA/7JJREFUeF7svQfYXldWmDuWLcuyJctFtlUsy7Jl2eqSyxT3Mh57xjOeXpmhl4Qb
+        vAAADrwBlbxySQAA/7JJREFUeF7svQfYXldWmDuWLcuyJctFtlUsy7Jl2eqSyxT3Mh57xjOeXpmhl4Qb
         yA2QQkLIMyGUAUIJvQ8Ehj4QBhiGHkJCuxBCGqQQSgqhExIIuck9V+8JSzlaXuff+9vf2uffW7P287zz
         zrLaL/3/933n/c93zn7eECtWrFixYsWKFStWrFixYi20IkJjxYoVK1asWLFixYoVK9ZiKyI0VqxYsWLF
         ihUrVqxYsWIttiJCY8WKFStWrFixYsWKFSvWYisiNFasWLFixYoVK1asWLFiLbYiQmPFihUrVqxYsWLF
