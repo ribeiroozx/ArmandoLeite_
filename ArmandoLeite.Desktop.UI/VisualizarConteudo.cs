@@ -37,8 +37,8 @@ namespace ArmandoLeite.Desktop.UI.DAL
 
         public void ApagarGrid(string idConteudo)
         {
-            DAL.ConteudoDAL conteudoDAL = new DAL.ConteudoDAL();
-            conteudoDAL.Apagarfoto(txtid.Text);
+            //DAL.ConteudoDAL conteudoDAL = new DAL.ConteudoDAL();
+            //conteudoDAL.ApagarConteudo(txtid.Text);
 
         }
 
