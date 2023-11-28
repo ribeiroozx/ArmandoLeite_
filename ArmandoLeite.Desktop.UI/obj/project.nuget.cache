@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YzzrBziMlLEGGi+cn9RUG0BPNOs0kjw4JbZ26P9dV78ipOevrCEUEJJSXE4vw8L/aDbO/Kx/W2ldA8qljpYAEw==",
+  "dgSpecHash": "tNUSbBolxpFF9/QBfb2GSIqsGgVleSTlQjDHV3pYGLoewtl/02qskJ3HbMj7ZIrV/aNIO2u0IbztuOA4aAazQg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mauricio.snasciment1\\source\\repos\\ArmandoLeite_\\ArmandoLeite.Desktop.UI\\ArmandoLeite.Desktop.UI.csproj",
+  "projectFilePath": "C:\\Users\\mauricio.snasciment1\\Documents\\GitHub\\ArmandoLeite_\\ArmandoLeite.Desktop.UI\\ArmandoLeite.Desktop.UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mauricio.snasciment1\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.5\\guna.ui2.winforms.2.0.4.5.nupkg.sha512",
     "C:\\Users\\mauricio.snasciment1\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sbnx4MF5fjljiW8MFFtvjp+qZ37kOqSZSEuSJ1ivAGd5eEyI9QJ5q4xB3mazUsAKI27Ctl6YHmzeObio4DUsyA==",
+  "dgSpecHash": "Y4LhllOjDG1Mez8LABtOTxnx4PVlL3GNFilRaJeVi1AxgbB2RsMvNHMWBohVtKxkygd/SgUuuMr/50rjA4uy8A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mauricio.snasciment1\\source\\repos\\ArmandoLeite_\\ArmandoLeite.DAL\\ArmandoLeite.DAL.csproj",
+  "projectFilePath": "C:\\Users\\mauricio.snasciment1\\Documents\\GitHub\\ArmandoLeite_\\ArmandoLeite.DAL\\ArmandoLeite.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mauricio.snasciment1\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\mauricio.snasciment1\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
