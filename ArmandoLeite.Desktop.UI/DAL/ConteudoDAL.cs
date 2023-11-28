@@ -188,6 +188,8 @@ namespace ArmandoLeite.Desktop.UI.DAL
             SqlCommand cmd = new SqlCommand("delete from Conteudo where idConteudo=" + idConteudo, conn);
             cmd.ExecuteNonQuery();
         }
+    }
+}
 
     //    //Atualizar
     //    public void Atualizarfoto(ConteudoDAL conteudoDAL, string titulo, string texto, string nomeEscritor, string data, int idConteudo)
@@ -217,7 +219,7 @@ namespace ArmandoLeite.Desktop.UI.DAL
     //    }
     //}
     #endregion
-}
+
 
 
 

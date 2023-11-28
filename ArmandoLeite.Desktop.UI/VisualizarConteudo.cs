@@ -24,8 +24,8 @@ namespace ArmandoLeite.Desktop.UI.DAL
         public void CarregarGrid()
         {
             DAL.ConteudoDAL conteudoDAL = new DAL.ConteudoDAL();
-            conteudoDAL.Selecionarfoto(txtid.Text);
-            dataGridView1.DataSource = conteudoDAL.Selecionarfoto(txtid.Text);
+            //conteudoDAL.Selecionarfoto(txtid.Text);
+            //dataGridView1.DataSource = conteudoDAL.Selecionarfoto(txtid.Text);
             //guna2DataGridView1.DataBind();
             DataGridViewImageColumn fotoColumn = (DataGridViewImageColumn)dataGridView1.Columns["foto"];
             fotoColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
@@ -59,12 +59,12 @@ namespace ArmandoLeite.Desktop.UI.DAL
             int.TryParse(txtid.Text, out idConteudoConvertido);
 
             conteudoDal.titulo = txtTitulo.Text;
-            conteudoDal.texto = txtTexto.Text;
-            conteudoDal.nomeEscritor = txtEscritor.Text;
+            //conteudoDal.texto = txtTexto.Text;
+            //conteudoDal.nomeEscritor = txtEscritor.Text;
             conteudoDal.data = date.Text;
-            conteudoDal.CaminhoFoto = caminhoFoto;
+            //conteudoDal.CaminhoFoto = caminhoFoto;
             conteudoDal.idConteudo = idConteudoConvertido;
-            conteudoDal.Atualizarfoto(conteudoDal, txtTitulo.Text, txtTexto.Text, txtEscritor.Text, date.Text, idConteudoConvertido);
+            //conteudoDal.Atualizarfoto(conteudoDal, txtTitulo.Text, txtTexto.Text, txtEscritor.Text, date.Text, idConteudoConvertido);
 
         }
 
