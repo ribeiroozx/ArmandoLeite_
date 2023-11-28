@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mauricio.snasciment1\\Documents\\GitHub\\ArmandoLeite_\\ArmandoLeite.DAL\\ArmandoLeite.DAL.csproj": {}
+    "C:\\Users\\mauricio.snasciment1\\source\\repos\\ArmandoLeite_\\ArmandoLeite.DAL\\ArmandoLeite.DAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mauricio.snasciment1\\Documents\\GitHub\\ArmandoLeite_\\ArmandoLeite.DAL\\ArmandoLeite.DAL.csproj": {
+    "C:\\Users\\mauricio.snasciment1\\source\\repos\\ArmandoLeite_\\ArmandoLeite.DAL\\ArmandoLeite.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mauricio.snasciment1\\Documents\\GitHub\\ArmandoLeite_\\ArmandoLeite.DAL\\ArmandoLeite.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\mauricio.snasciment1\\source\\repos\\ArmandoLeite_\\ArmandoLeite.DAL\\ArmandoLeite.DAL.csproj",
         "projectName": "ArmandoLeite.DAL",
-        "projectPath": "C:\\Users\\mauricio.snasciment1\\Documents\\GitHub\\ArmandoLeite_\\ArmandoLeite.DAL\\ArmandoLeite.DAL.csproj",
+        "projectPath": "C:\\Users\\mauricio.snasciment1\\source\\repos\\ArmandoLeite_\\ArmandoLeite.DAL\\ArmandoLeite.DAL.csproj",
         "packagesPath": "C:\\Users\\mauricio.snasciment1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mauricio.snasciment1\\Documents\\GitHub\\ArmandoLeite_\\ArmandoLeite.DAL\\obj\\",
+        "outputPath": "C:\\Users\\mauricio.snasciment1\\source\\repos\\ArmandoLeite_\\ArmandoLeite.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
