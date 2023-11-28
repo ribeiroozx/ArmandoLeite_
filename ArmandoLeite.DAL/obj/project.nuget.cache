@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "Q+VNTXV8an8zZcwTwpyvszkP2sle91h2QmD5D5b+rI0ZBZTBGKpcSCLR2y1uK8nbNno4UnaTTG7xmKB3TUNXyg==",
   "success": true,
   "projectFilePath": "C:\\Users\\marcel.vbdias\\source\\repos\\ArmandoLeite_\\ArmandoLeite.DAL\\ArmandoLeite.DAL.csproj",
+=======
+  "dgSpecHash": "7FqCdUzsHU0TiCLR2NUeCH7LKr7Oz04S5P/53BZi9cvPrJk6hPdUngV9JQV09QpUr+g+0yJO5UCcMnvSjuFtEQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\marcel.vbdias\\Documents\\GitHub\\ArmandoLeite_\\ArmandoLeite.DAL\\ArmandoLeite.DAL.csproj",
+>>>>>>> 77d42ce19dc57dda974b25e5706afbbcfca78035
   "expectedPackageFiles": [
     "C:\\Users\\marcel.vbdias\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\marcel.vbdias\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

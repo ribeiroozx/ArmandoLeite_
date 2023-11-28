@@ -212,6 +212,8 @@ namespace ArmandoLeite.Desktop.UI.DAL
             SqlCommand cmd4 = new SqlCommand("delete from Pdf where FkConteudo=" + idConteudo, conn);
             cmd3.ExecuteNonQuery();
         }
+    }
+}
 
 
         //Atualizar
@@ -267,6 +269,7 @@ namespace ArmandoLeite.Desktop.UI.DAL
 
 
 
+<<<<<<< HEAD
 
 
 
@@ -306,6 +309,12 @@ namespace ArmandoLeite.Desktop.UI.DAL
     }
 }
 #endregion
+=======
+    //        }
+    //    }
+    //}
+    #endregion
+>>>>>>> 77d42ce19dc57dda974b25e5706afbbcfca78035
 
 
 
