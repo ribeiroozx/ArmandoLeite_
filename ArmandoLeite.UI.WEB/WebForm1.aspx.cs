@@ -16,21 +16,18 @@ namespace ArmandoLeite.UI.WEB
         }
 
 
-        public void Cadastro(string nome, int idade, string email)
+
+        protected void BtnEnviar_Click1(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=TarefasBD;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             conn.Open();
 
-            SqlCommand cmd = new SqlCommand("insert into Cadastro values('" +nome+ "', '" +idade+ "', '" +email+ "')", conn);
+            SqlCommand cmd = new SqlCommand("insert into Cadastro values('" + TextNome.Text + "', '" + Convert.ToInt32(TextIdade.Text) + "', '" + TextEndereco.Text + "')", conn);
             cmd.ExecuteNonQuery();
-        }
 
-       
-
-        protected void BtnEnviar_Click1(object sender, EventArgs e)
-        {
-            Cadastro(TextNome.Text, Convert.ToInt32(TextIdade.Text), TextEndereco.Text);
             System.Threading.Thread.Sleep(3000);
+            Response.Redirect("WebForm2.aspx?id=10");
+
         }
     }
 }
