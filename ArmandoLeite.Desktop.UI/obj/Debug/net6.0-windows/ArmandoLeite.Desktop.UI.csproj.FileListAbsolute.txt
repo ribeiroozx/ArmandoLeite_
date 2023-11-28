@@ -105,3 +105,17 @@ C:\Users\marcel.vbdias\OneDrive - SENAC - SP\Documentos\GitHub\ArmandoLeite.Desk
 C:\Users\marcel.vbdias\OneDrive - SENAC - SP\Documentos\GitHub\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\refint\ArmandoLeite.Desktop.UI.dll
 C:\Users\marcel.vbdias\OneDrive - SENAC - SP\Documentos\GitHub\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.pdb
 C:\Users\mauricio.snasciment1\Documents\GitHub\ArmandoLeite_\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.DAL.AdicionarConteudo.resources
+C:\Users\mauricio.snasciment1\source\repos\ArmandoLeite_\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.csproj.AssemblyReference.cache
+C:\Users\mauricio.snasciment1\source\repos\ArmandoLeite_\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.DAL.AdicionarConteudo.resources
+C:\Users\mauricio.snasciment1\source\repos\ArmandoLeite_\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.Login.resources
+C:\Users\mauricio.snasciment1\source\repos\ArmandoLeite_\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.DAL.Menu.resources
+C:\Users\mauricio.snasciment1\source\repos\ArmandoLeite_\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.Properties.Resources.resources
+C:\Users\mauricio.snasciment1\source\repos\ArmandoLeite_\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.DAL.VisualizarConteudo.resources
+C:\Users\mauricio.snasciment1\source\repos\ArmandoLeite_\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.csproj.GenerateResource.cache
+C:\Users\mauricio.snasciment1\source\repos\ArmandoLeite_\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mauricio.snasciment1\source\repos\ArmandoLeite_\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.AssemblyInfoInputs.cache
+C:\Users\mauricio.snasciment1\source\repos\ArmandoLeite_\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.AssemblyInfo.cs
+C:\Users\mauricio.snasciment1\source\repos\ArmandoLeite_\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.csproj.CoreCompileInputs.cache
+C:\Users\mauricio.snasciment1\source\repos\ArmandoLeite_\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.dll
+C:\Users\mauricio.snasciment1\source\repos\ArmandoLeite_\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\refint\ArmandoLeite.Desktop.UI.dll
+C:\Users\mauricio.snasciment1\source\repos\ArmandoLeite_\ArmandoLeite.Desktop.UI\obj\Debug\net6.0-windows\ArmandoLeite.Desktop.UI.pdb
