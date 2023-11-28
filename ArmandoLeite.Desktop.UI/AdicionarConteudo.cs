@@ -54,6 +54,7 @@ namespace ArmandoLeite.Desktop.UI.DAL
             conteudoDal.texto = txtTexto.Text;
             conteudoDal.nomeEscritor = txtEscritor.Text;
             conteudoDal.data = date.Text;
+            conteudoDal.Semestre = 
             conteudoDal.CaminhoFoto = caminhoFoto;
             conteudoDal.Salvarfoto(conteudoDal);
 

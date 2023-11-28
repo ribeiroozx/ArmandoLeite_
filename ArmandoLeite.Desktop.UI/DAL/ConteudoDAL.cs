@@ -19,6 +19,7 @@ namespace ArmandoLeite.Desktop.UI.DAL
         public string data { get; set; }
         public string CaminhoFoto { get; set; }
         public byte[] foto { get; set; }
+        public string Semestre { get; set; }
 
         //public byte[] selectedPDF { get; set; }
         //public string caminhoPDF { get; set; }
@@ -68,8 +69,8 @@ namespace ArmandoLeite.Desktop.UI.DAL
             //}
             byte[] Foto = GetFoto(conteudoDAL.CaminhoFoto);
 
-            var sql = "INSERT INTO Conteudo (Titulo, Texto, NomeEscritor, data) OUTPUT inserted.idConteudo VALUES (@titulo, @texto, @nomeEscritor, @data)";
-            var sql2 = "INSERT INTO Foto (DadoFoto, FkConteudo) VALUES (@Dadofoto, @idConteudo)";
+            var sql = "INSERT INTO Conteudo (Titulo, Texto, NomeEscritor,Semestre, data) OUTPUT inserted.idConteudo VALUES (@titulo, @texto, @nomeEscritor,@Semestre, @data)";
+            var sql2 = "INSERT INTO Pdf (DadoPdf, FkConteudo) VALUES (@DadoPdf, @idConteudo)";
 
             using (var con = new SqlConnection(@"Data Source=FAC0539750W10-1;Initial Catalog=ArmandoLeite;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"))
             {
@@ -81,13 +82,14 @@ namespace ArmandoLeite.Desktop.UI.DAL
                     cmd.Parameters.AddWithValue("@texto", conteudoDAL.texto);
                     cmd.Parameters.AddWithValue("@nomeEscritor", conteudoDAL.nomeEscritor);
                     cmd.Parameters.AddWithValue("@data", conteudoDAL.data);
+                    cmd.Parameters.AddWithValue("@Semestre", conteudoDAL.Semestre);
 
                     // ExecuteScalar retorna o valor da cláusula OUTPUT
                     int idConteudo = Convert.ToInt32(cmd.ExecuteScalar());
 
                     using (var cmd2 = new SqlCommand(sql2, con))
                     {
-                        cmd2.Parameters.Add("@Dadofoto", System.Data.SqlDbType.Image, Foto.Length).Value = Foto;
+                        cmd2.Parameters.Add("@DadoPdf", System.Data.SqlDbType.VarBinary, Foto.Length).Value = Foto;
                         cmd2.Parameters.AddWithValue("@idConteudo", idConteudo);
                         cmd2.ExecuteNonQuery();
                     }
@@ -112,6 +114,7 @@ namespace ArmandoLeite.Desktop.UI.DAL
             }
             return foto;
         }
+
 
 
 
