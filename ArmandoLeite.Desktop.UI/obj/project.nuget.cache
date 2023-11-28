@@ -1,21 +1,27 @@
 {
   "version": 2,
-  "dgSpecHash": "tNUSbBolxpFF9/QBfb2GSIqsGgVleSTlQjDHV3pYGLoewtl/02qskJ3HbMj7ZIrV/aNIO2u0IbztuOA4aAazQg==",
+<<<<<<< HEAD
+  "dgSpecHash": "C+DUzDH+nSkMwLb3TnfsgXb67r5yQSr2o3dBHQxK0vLv+AOVO+KXHHCmjr0gbhQGO5byKbNmqa8ENYyuY58z7g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mauricio.snasciment1\\Documents\\GitHub\\ArmandoLeite_\\ArmandoLeite.Desktop.UI\\ArmandoLeite.Desktop.UI.csproj",
+  "projectFilePath": "C:\\Users\\marcel.vbdias\\source\\repos\\ArmandoLeite_\\ArmandoLeite.Desktop.UI\\ArmandoLeite.Desktop.UI.csproj",
+=======
+  "dgSpecHash": "jY1pPh3UOrO0hJiXe9P+ptOTLpPmkdE3ZAvRZvSpw2Rem9sxQmXkQmEAPJa5G6vPoO2tOqWXWeWdFgwln7SX+w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\marcel.vbdias\\Documents\\GitHub\\ArmandoLeite_\\ArmandoLeite.Desktop.UI\\ArmandoLeite.Desktop.UI.csproj",
+>>>>>>> 77d42ce19dc57dda974b25e5706afbbcfca78035
   "expectedPackageFiles": [
-    "C:\\Users\\mauricio.snasciment1\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.5\\guna.ui2.winforms.2.0.4.5.nupkg.sha512",
-    "C:\\Users\\mauricio.snasciment1\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
-    "C:\\Users\\mauricio.snasciment1\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
-    "C:\\Users\\mauricio.snasciment1\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
-    "C:\\Users\\mauricio.snasciment1\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
-    "C:\\Users\\mauricio.snasciment1\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
-    "C:\\Users\\mauricio.snasciment1\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
-    "C:\\Users\\mauricio.snasciment1\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
-    "C:\\Users\\mauricio.snasciment1\\.nuget\\packages\\system.data.sqlclient\\4.8.5\\system.data.sqlclient.4.8.5.nupkg.sha512",
-    "C:\\Users\\mauricio.snasciment1\\.nuget\\packages\\system.management\\6.0.0\\system.management.6.0.0.nupkg.sha512",
-    "C:\\Users\\mauricio.snasciment1\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
-    "C:\\Users\\mauricio.snasciment1\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
+    "C:\\Users\\marcel.vbdias\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.5\\guna.ui2.winforms.2.0.4.5.nupkg.sha512",
+    "C:\\Users\\marcel.vbdias\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\marcel.vbdias\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\marcel.vbdias\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
+    "C:\\Users\\marcel.vbdias\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\marcel.vbdias\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\marcel.vbdias\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\marcel.vbdias\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
+    "C:\\Users\\marcel.vbdias\\.nuget\\packages\\system.data.sqlclient\\4.8.5\\system.data.sqlclient.4.8.5.nupkg.sha512",
+    "C:\\Users\\marcel.vbdias\\.nuget\\packages\\system.management\\6.0.0\\system.management.6.0.0.nupkg.sha512",
+    "C:\\Users\\marcel.vbdias\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
+    "C:\\Users\\marcel.vbdias\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }
