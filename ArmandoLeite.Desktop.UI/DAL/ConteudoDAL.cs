@@ -14,11 +14,9 @@ namespace ArmandoLeite.Desktop.UI.DAL
 
         public int idConteudo { get; set; }
         public string titulo { get; set; }
-        public string nomeEscritor { get; set; }
-        public string texto { get; set; }
         public string data { get; set; }
-        public string CaminhoFoto { get; set; }
-        public byte[] foto { get; set; }
+        public string CaminhoPdf { get; set; }
+        public byte[] pdf { get; set; }
         public string Semestre { get; set; }
 
         //public byte[] selectedPDF { get; set; }
@@ -67,9 +65,9 @@ namespace ArmandoLeite.Desktop.UI.DAL
             //    }
             //    return idConteudo;
             //}
-            byte[] Foto = GetFoto(conteudoDAL.CaminhoFoto);
+            byte[] Pdf = GetPdf(conteudoDAL.CaminhoPdf);
 
-            var sql = "INSERT INTO Conteudo (Titulo, Texto, NomeEscritor,Semestre, data) OUTPUT inserted.idConteudo VALUES (@titulo, @texto, @nomeEscritor,@Semestre, @data)";
+            var sql = "INSERT INTO Conteudo (Titulo,Semestre, data) OUTPUT inserted.idConteudo VALUES (@titulo, @Semestre, @data)";
             var sql2 = "INSERT INTO Pdf (DadoPdf, FkConteudo) VALUES (@DadoPdf, @idConteudo)";
 
             using (var con = new SqlConnection(@"Data Source=FAC0539750W10-1;Initial Catalog=ArmandoLeite;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"))
@@ -79,8 +77,6 @@ namespace ArmandoLeite.Desktop.UI.DAL
                 using (var cmd = new SqlCommand(sql, con))
                 {
                     cmd.Parameters.AddWithValue("@titulo", conteudoDAL.titulo);
-                    cmd.Parameters.AddWithValue("@texto", conteudoDAL.texto);
-                    cmd.Parameters.AddWithValue("@nomeEscritor", conteudoDAL.nomeEscritor);
                     cmd.Parameters.AddWithValue("@data", conteudoDAL.data);
                     cmd.Parameters.AddWithValue("@Semestre", conteudoDAL.Semestre);
 
@@ -89,7 +85,7 @@ namespace ArmandoLeite.Desktop.UI.DAL
 
                     using (var cmd2 = new SqlCommand(sql2, con))
                     {
-                        cmd2.Parameters.Add("@DadoPdf", System.Data.SqlDbType.VarBinary, Foto.Length).Value = Foto;
+                        cmd2.Parameters.Add("@DadoPdf", System.Data.SqlDbType.VarBinary, Pdf.Length).Value = Pdf;
                         cmd2.Parameters.AddWithValue("@idConteudo", idConteudo);
                         cmd2.ExecuteNonQuery();
                     }
@@ -97,22 +93,19 @@ namespace ArmandoLeite.Desktop.UI.DAL
                     return idConteudo;
                 }
             }
-
-
-
         }
 
-        private byte[] GetFoto(string caminhoFoto)
+        private byte[] GetPdf(string caminhoPdf)
         {
-            byte[] foto;
-            using (var stream = new FileStream(caminhoFoto, FileMode.Open, FileAccess.Read))
+            byte[] pdf;
+            using (var stream = new FileStream(caminhoPdf, FileMode.Open, FileAccess.Read))
             {
                 using (var reader = new BinaryReader(stream))
                 {
-                    foto = reader.ReadBytes((int)stream.Length);
+                    pdf = reader.ReadBytes((int)stream.Length);
                 }
             }
-            return foto;
+            return pdf;
         }
 
 
@@ -150,42 +143,40 @@ namespace ArmandoLeite.Desktop.UI.DAL
         //    dr.Close();
         //    return usuarioDals;
         //}
-        public List<ConteudoDAL> Selecionarfoto(string idConteudo)
-        {
-            SqlConnection conn = new SqlConnection(@"Data Source=FAC0539750W10-1;Initial Catalog=ArmandoLeite;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
-            conn.Open();
+        //public List<ConteudoDAL> Selecionarfoto(string idConteudo)
+        //{
+        //    SqlConnection conn = new SqlConnection(@"Data Source=FAC0539750W10-1;Initial Catalog=ArmandoLeite;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+        //    conn.Open();
 
-            string sql = "SELECT Conteudo.*, Foto.DadoFoto " +
-                         "FROM Conteudo " +
-                         "INNER JOIN Foto ON Conteudo.idConteudo = Foto.FkConteudo " +
-                         "WHERE Conteudo.idConteudo = '" + idConteudo + "'";
+        //    string sql = "SELECT Conteudo.*, Foto.DadoFoto " +
+        //                 "FROM Conteudo " +
+        //                 "INNER JOIN Foto ON Conteudo.idConteudo = Foto.FkConteudo " +
+        //                 "WHERE Conteudo.idConteudo = '" + idConteudo + "'";
 
 
-            SqlCommand cmd = new SqlCommand(sql, conn);
-            cmd.Parameters.AddWithValue("@idConteudo", idConteudo);
-            SqlDataReader dr = cmd.ExecuteReader();
-            List<ConteudoDAL> usuarioDals = new List<ConteudoDAL>();
+        //    SqlCommand cmd = new SqlCommand(sql, conn);
+        //    cmd.Parameters.AddWithValue("@idConteudo", idConteudo);
+        //    SqlDataReader dr = cmd.ExecuteReader();
+        //    List<ConteudoDAL> usuarioDals = new List<ConteudoDAL>();
 
-            while (dr.Read())
-            {
-                ConteudoDAL conteudo = new ConteudoDAL();
-                conteudo.idConteudo = dr.GetInt32(dr.GetOrdinal("idConteudo"));
-                conteudo.titulo = dr.GetString(dr.GetOrdinal("Titulo"));
-                conteudo.texto = dr.GetString(dr.GetOrdinal("Texto"));
-                conteudo.nomeEscritor = dr.GetString(dr.GetOrdinal("NomeEscritor"));
-                conteudo.data = dr.GetString(dr.GetOrdinal("data"));
+        //    while (dr.Read())
+        //    {
+        //        ConteudoDAL conteudo = new ConteudoDAL();
+        //        conteudo.idConteudo = dr.GetInt32(dr.GetOrdinal("idConteudo"));
+        //        conteudo.titulo = dr.GetString(dr.GetOrdinal("Titulo"));
+        //        conteudo.data = dr.GetString(dr.GetOrdinal("data"));
 
-                if (dr["DadoFoto"] != DBNull.Value)
-                {
-                    conteudo.foto = (byte[])dr["DadoFoto"];
-                }
+        //        if (dr["DadoFoto"] != DBNull.Value)
+        //        {
+        //            conteudo.Pdf = (byte[])dr["DadoPdf"];
+        //        }
 
-                usuarioDals.Add(conteudo);
-            }
+        //        usuarioDals.Add(conteudo);
+        //    }
 
-            dr.Close();
-            return usuarioDals;
-        }
+        //    dr.Close();
+        //    return usuarioDals;
+        //}
 
 
         //Apagar
@@ -198,35 +189,33 @@ namespace ArmandoLeite.Desktop.UI.DAL
             cmd.ExecuteNonQuery();
         }
 
-        //Atualizar
-        public void Atualizarfoto(ConteudoDAL conteudoDAL, string titulo, string texto, string nomeEscritor, string data, int idConteudo)
-        {
-            byte[] Foto = GetFoto(conteudoDAL.CaminhoFoto);
-            var sql = "UPDATE Conteudo SET Titulo = @Titulo, Texto = @Texto, NomeEscritor = @NomeEscritor, data = @data, foto = @foto WHERE idConteudo = @idConteudo";
+    //    //Atualizar
+    //    public void Atualizarfoto(ConteudoDAL conteudoDAL, string titulo, string texto, string nomeEscritor, string data, int idConteudo)
+    //    {
+    //        byte[] Foto = GetFoto(conteudoDAL.CaminhoFoto);
+    //        var sql = "UPDATE Conteudo SET Titulo = @Titulo, Texto = @Texto, NomeEscritor = @NomeEscritor, data = @data, foto = @foto WHERE idConteudo = @idConteudo";
 
-            using (var con = new SqlConnection(@"Data Source=FAC0539750W10-1;Initial Catalog=ArmandoLeite;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"))
-            {
+    //        using (var con = new SqlConnection(@"Data Source=FAC0539750W10-1;Initial Catalog=ArmandoLeite;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"))
+    //        {
 
-                con.Open();
-                using (var cmd = new SqlCommand(sql, con))
-                {
+    //            con.Open();
+    //            using (var cmd = new SqlCommand(sql, con))
+    //            {
 
-                    cmd.Parameters.AddWithValue("@Titulo", titulo);
-                    cmd.Parameters.AddWithValue("@Texto", texto);
-                    cmd.Parameters.AddWithValue("@NomeEscritor", nomeEscritor);
-                    cmd.Parameters.AddWithValue("@data", data);
-                    cmd.Parameters.AddWithValue("@idConteudo", idConteudo);
-                    cmd.Parameters.AddWithValue("@foto", Foto);
-                    cmd.ExecuteNonQuery();
-                }
+    //                cmd.Parameters.AddWithValue("@Titulo", titulo);
+    //                cmd.Parameters.AddWithValue("@data", data);
+    //                cmd.Parameters.AddWithValue("@idConteudo", idConteudo);
+    //                cmd.Parameters.AddWithValue("@foto", Foto);
+    //                cmd.ExecuteNonQuery();
+    //            }
 
 
 
 
 
-            }
-        }
-    }
+    //        }
+    //    }
+    //}
     #endregion
 }
 

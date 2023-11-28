@@ -15,7 +15,7 @@ namespace ArmandoLeite.Desktop.UI.DAL
     {
         
 
-        private string caminhoFoto = "";
+        private string caminhoPdf = "";
         public DAL.ConteudoDAL conteudoDal = new DAL.ConteudoDAL();
 
 
